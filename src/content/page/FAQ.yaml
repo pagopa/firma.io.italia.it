@@ -1,0 +1,50 @@
+route: ''
+url: /FAQ
+components:
+  - product: Firma Con Io
+    type: Header
+    slug: 'faq-header'
+    theme: light
+    menu:
+      - theme: light
+        label: Home
+        href: /
+      - theme: light
+        label: FAQ
+        href: /faq
+        active: true
+  - theme: dark
+    type: Hero
+    slug: 'faq-hero'
+    title: FAQ
+    subtitle: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    background: 'https://deploy-preview-10--resonant-platypus-13009d.netlify.app/static/media/hero-solid-dark.34ea646f.jpg' # should be ./hero-solid-dark.jpg instead
+    size: small
+  - theme: light
+    type: Accordion
+    slug: 'faq-accordion-generali'
+    title: Generali
+    layout: center
+    accordionItems:
+      - header: Cosa significa che l'app è disponibile negli store in versione open beta?
+        content: Questo dipende da dove risiedi. Sono già diverse migliaia i servizi erogati dagli enti locali e nazionali tramite IO e molti se ne aggiungeranno in futuro; a questo link puoi consultare la lista, in continuo aggiornamento, di quelli già integrati e disponibili all’interno della sezione Servizi dell’app.
+      - header: Perché, dopo un anno di test, l’app è ancora in beta?
+        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      - header: I cittadini possono contribuire allo sviluppo dell’app anche ora che IO è negli store online?
+        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      - header: Perchè devo per forza avere SPID o CIE per usare la app?
+        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  - theme: light
+    type: Accordion
+    slug: 'faq-accordion-enti'
+    title: Per gli enti
+    layout: center
+    accordionItems:
+      - header: Quali servizi sono già disponibili sull’ app?
+        content: Questo dipende da dove risiedi. Sono già diverse migliaia i servizi erogati dagli enti locali e nazionali tramite IO e molti se ne aggiungeranno in futuro; a questo link puoi consultare la lista, in continuo aggiornamento, di quelli già integrati e disponibili all’ interno della sezione Servizi dell’ app.
+      - header: Come posso usare i servizi in lista?
+        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      - header: Che tipo di comunicazioni posso ricevere?
+        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      - header: Perché devo per forza avere SPID o CIE per usare la app?
+        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
