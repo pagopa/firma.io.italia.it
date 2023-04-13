@@ -1,16 +1,16 @@
 import {
 	Box,
-	Grid,
-	Typography,
-	Stack,
-	TextField,
+	Button,
 	Checkbox,
 	Divider,
-	Button,
+	Grid,
+	Stack,
+	TextField,
+	Typography,
 } from '@mui/material';
 import { Container } from '@mui/system';
-import solidDarkBackground from '../../static/hero-solid-dark.jpg';
 import React from 'react';
+import solidDarkBackground from '../../static/hero-solid-dark.jpg';
 
 export const Form = ({
 	title,
@@ -28,7 +28,7 @@ export const Form = ({
 			backgroundPosition: 'center',
 		}}
 	>
-		<Container>
+		<Container maxWidth="sm">
 			<Grid container justifyContent="center">
 				<Grid item xs={10}>
 					<form>
@@ -87,15 +87,12 @@ export const Form = ({
 						<Divider />
 						<Stack spacing={4} pt={4} pb={8}>
 							<Stack direction="row" justifyContent="center">
-								<Button
-									variant="contained"
-									color="negative"
-								>
+								<Button variant="contained" color="negative">
 									Invia Richiesta
 								</Button>
 							</Stack>
 							<Typography
-								// variant="caption-semibold"
+								variant="caption-semibold"
 								color="primary.contrastText"
 								textAlign="center"
 							>
