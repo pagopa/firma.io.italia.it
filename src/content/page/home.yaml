@@ -16,7 +16,7 @@ components:
   - theme: dark
     type: Hero
     slug: 'home-hero-firma'
-    title: La soluzione per firmare i documenti e i contratti della PA direttamente in app.
+    title: La soluzione per firmare i documenti e i contratti della PA direttamente in app
     subtitle: Firma con IO è la funzionalità integrata nell’app IO che consente di firmare digitalmente i documenti della Pubblica Amministrazione in modo facile, veloce e sicuro. Tutto, senza uscire dall’app.
     background: ./hero_background.jpg
     size: big
@@ -24,12 +24,12 @@ components:
     type: Editorial
     slug: 'home-editorial-firma'
     width: wide
+    eyelet: ''
     title: Una firma a valore legale, a disposizione di tutti
-    eyelet: per i cittadini
-    body: La Firma con IO è una Firma Elettronica Qualificata “one shot” con il massimo valore legale, pari alla firma autografa, che consente agli enti di digitalizzare l’iter di raccolta firme. Ai cittadini basta avere IO per firmare documenti e contratti direttamente sul proprio smartphone.
+    body: Firma con IO è una Firma Elettronica Qualificata “one shot” con il massimo valore legale, pari alla firma autografa, che consente agli enti di digitalizzare l’iter di raccolta firme. Ai cittadini basta avere IO per firmare documenti e contratti direttamente sul proprio dispositivo.
     ctaButtons:
-      - text: Leggi le FAQ
-        href: faq
+      - text: Come Funziona
+        href: '#come-funziona'
         variant: outlined
     image:
       src: ./regular.png
@@ -39,7 +39,7 @@ components:
     slug: 'home-editorial-enti'
     reversed: true,
     width: wide
-    eyelet: per gli enti,
+    eyelet: ''
     title: Tutti i processi di firma, senza spostamenti
     body: '<p><p>Grazie a Firma con IO lo scambio di documenti tra enti e cittadini è immediato. Non serve apporre la firma in presenza o scannerizzare copie cartacee da inviare in pdf, perché tutto avviene su IO.</p>
 
@@ -47,12 +47,9 @@ components:
 
       <p>Per avere maggiori dettagli su come il tuo ente può integrare il servizio di Firma con IO, consulta il <a href="https://docs.pagopa.it/firma-con-io/5WI4C48H2h1Kw9AkgvSM/">manuale operativo</a>.</p></p>'
     ctaButtons:
-      - text: SCOPRI COME FUNZIONA
+      - text: Aderisci
         variant: contained
-        href: '#howTo-come-funziona'
-      - text: ADERISCI
-        variant: outlined
-        href: '#form-home-firma'
+        href: '#aderisci'
     image:
       src: ./portrait.png
       alt: a landscape photo
@@ -64,44 +61,44 @@ components:
       - title: Semplice
         subtitle: L’invio, la ricezione e la gestione dei documenti firmati avvengono in maniera immediata con un notevole risparmio di tempo
       - title: Sicuro
-        subtitle: I cittadini firmano attraverso un canale già noto e affidabile, senza doversi iscrivere a  portali di firma dedicati
+        subtitle: I cittadini firmano attraverso un canale già noto e affidabile, senza doversi iscrivere a  portali di firma dedicati
       - title: Conveniente
         subtitle: Consente a enti e PA di risparmiare sui costi legati alla raccolta firme e gestione documentale
       - title: Sostenibile
         subtitle: L’intero processo è interamente digitale, evitando spostamenti e stampa di documenti cartacei
   - theme: light
     type: HowTo
-    slug: 'home-howTo-come-funziona'
+    slug: 'come-funziona'
     title: Come funziona
     steps:
-      - title: Ricevi una richiesta di firma
-        description: L’ente può inviarti una richiesta di firma con un messaggio sull’app IO. È possibile firmare anche dal sito web dell’ente. Per farlo, dovrai aprire i documenti su IO tramite codice QR.
-      - title: Apri i documenti su IO
-        description: Entra nell’app per visualizzare i documenti da firmare, consultare le clausole presenti e le condizioni del servizio.
-      - title: Firma
-        description: Procedi con la firma dei documenti. Per completare l’operazione basta autenticarti tramite riconoscimento biometrico o codice di sblocco.
-      - title: Salva i documenti firmati
-        description: Completata l’operazione, riceverai i documenti firmati tramite messaggio su IO. Puoi scegliere se condividerli o scaricarli sul tuo dispositivo.
+      - title: L’ente invia la richiesta di firma
+        description: L’ente chiede all’utente di firmare un documento, inviando un messaggio sull’app IO. È possibile firmare anche dal sito web dell’ente attraverso un pulsante dedicato che permette di aprire i documenti su IO e completare l’operazione.
+      - title: I documenti sono visibili su IO
+        description: L’utente effettua l’accesso all’app IO per visualizzare i documenti da firmare, consultare le clausole presenti e le condizioni del servizio. 
+      - title: L’utente appone la firma
+        description: Dopo aver selezionato le firme da apporre e accettato termini e condizioni del servizio, l’utente completa l’operazione  tramite riconoscimento biometrico o codice di sblocco.
+      - title: I documenti firmati sono disponibili
+        description: L’utente riceve tramite messaggio su IO i documenti firmati, che possono essere condivisi o scaricati sul proprio dispositivo.
     rowMaxSteps: 4
     stepsAlign: center
   - src: ./typing-on-a-computer.mp4
     type: PhotoVideo
     slug: 'home-photoVideo-firma'
-  - title: Vuoi aderire a Firma con IO?
+  - title: Vuoi altre informazioni sull’adesione?
     type: Form
-    slug: 'home-form-firma'
+    slug: 'aderisci'
     notice:
-      newsletter: Inserendo il tuo indirizzo email stai accettando la nostra informativa sul trattamento dei dati personali per l’iscrizione alla newsletter.
-      privacy: Inserendo il tuo indirizzo email stai accettando la nostra informativa sul trattamento dei dati personali per la Privacy Policy.
+      newsletter: Voglio ricevere aggiornamenti su questa e sulle altre iniziative PagoPA S.P.A, iscrivendomi alla newsletter.
+      privacy: Inserendo il tuo indirizzo email stai accettando la nostra informativa sul trattamento dei dati personali.
   - decoration: ./aderisci.svg
     type: BannerLink
     slug: 'bannerLink-firma'
     theme: light
     body: Se hai già le informazioni necessarie, procedi con la richiesta di adesione per il tuo ente
-    title: Vuoi Aderire a Firma con IO?
+    title: Vuoi Aderire?
     ctaButtons:
       - text: VAI ALL'ADESIONE
-        href: '#'
+        href: 'https://selfcare.pagopa.it'
         variant: contained
   - theme: dark
     type: BannerLink
