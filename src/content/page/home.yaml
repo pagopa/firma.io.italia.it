@@ -41,7 +41,11 @@ components:
     width: wide
     eyelet: per gli enti,
     title: Tutti i processi di firma, senza spostamenti
-    body: 'Grazie a Firma con IO lo scambio di documenti tra enti e cittadini è immediato. Non serve apporre la firma in presenza o scannerizzare copie cartacee da inviare in pdf: tutto avviene su IO e salvato in automatico in un archivio sempre accessibile. Un esempio? Qualsiasi realtà del mondo accademico può gestire da remoto contratti relativi a dottorati, assegni di ricerca o borse di studio che devono essere sottoscritti da studenti o collaboratori, solitamente non dotati di una firma digitale certificata.'
+    body: '<p><p>Grazie a Firma con IO lo scambio di documenti tra enti e cittadini è immediato. Non serve apporre la firma in presenza o scannerizzare copie cartacee da inviare in pdf, perché tutto avviene su IO.</p>
+
+      <p>Un esempio? Qualsiasi realtà del <b>mondo accademico</b> può gestire da remoto contratti occasionali, tirocini, dottorati, assegni di ricerca o borse di studio che devono essere sottoscritti da studenti o collaboratori, solitamente non dotati di una firma digitale certificata.</p>
+
+      <p>Per avere maggiori dettagli su come il tuo ente può integrare il servizio di Firma con IO, consulta il <a href="https://docs.pagopa.it/firma-con-io/5WI4C48H2h1Kw9AkgvSM/">manuale operativo</a>.</p></p>'
     ctaButtons:
       - text: SCOPRI COME FUNZIONA
         variant: contained

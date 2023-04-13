@@ -1,6 +1,7 @@
 import Pagopa from '@pagopa/pagopa-editorial-components/';
 import { graphql } from 'gatsby';
 import React from 'react';
+import { Editorial } from './Editorial';
 import { Feature } from './Feature';
 import { Form } from './Form';
 import { HowTo } from './HowTo';
@@ -11,7 +12,7 @@ const componentsMap: {
 } = {
 	Accordion: Pagopa.Accordion,
 	BannerLink: Pagopa.BannerLink,
-	Editorial: Pagopa.Editorial,
+	Editorial: Editorial,
 	Feature: Feature,
 	Form: Form,
 	Header: Pagopa.Header,
