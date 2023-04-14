@@ -1,12 +1,13 @@
 import Pagopa from '@pagopa/pagopa-editorial-components/';
 import { HowToProps } from '@pagopa/pagopa-editorial-components/dist/components/HowTo';
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 const Icons = [
-	<img src="./Send.svg" />,
-	<img src="./DeviceDoc.svg" />,
-	<img src="./Firma.svg" />,
-	<img src="./Leggi.svg" />,
+	<StaticImage src="../assets/Send.svg" alt="send" />,
+	<StaticImage src="../assets/DeviceDoc.svg" alt="device" />,
+	<StaticImage src="../assets/Firma.svg" alt="firma" />,
+	<StaticImage src="../assets/Leggi.svg" alt="leggi" />,
 ];
 
 export const HowTo = (props: HowToProps) => (

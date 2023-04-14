@@ -21,9 +21,12 @@
     "@mdx-js/react": "^2.3.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.11.16",
-    "@pagopa/pagopa-editorial-components": "^0.0.6",
+    "@pagopa/pagopa-editorial-components": "../corporate/pagopa-editorial-components",
     "gatsby": "^5.8.1",
+    "gatsby-plugin-image": "^3.8.0",
+    "gatsby-plugin-sharp": "^5.8.1",
     "gatsby-source-filesystem": "^5.8.0",
+    "gatsby-transformer-sharp": "^5.8.0",
     "gatsby-transformer-yaml": "^5.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
