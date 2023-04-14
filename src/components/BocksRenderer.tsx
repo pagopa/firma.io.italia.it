@@ -4,6 +4,7 @@ import React from 'react';
 import { Editorial } from './Editorial';
 import { Feature } from './Feature';
 import { Form } from './Form';
+import { Hero } from './Hero';
 import { HowTo } from './HowTo';
 import * as MUI from '@mui/material';
 import * as MI from '@mui/icons-material';
@@ -32,7 +33,7 @@ const componentsMap: {
 	Feature: Feature,
 	Form: Form,
 	Header: Pagopa.Header,
-	Hero: Pagopa.Hero,
+	Hero: Hero,
 	HowTo: HowTo,
 	PhotoVideo: Pagopa.PhotoVideo,
 };
@@ -69,7 +70,11 @@ export const query = graphql`
 		theme
 		title
 		subtitle
-		background
+		background {
+			childImageSharp {
+				gatsbyImageData(layout: FULL_WIDTH)
+			}
+		}
 		size
 	}
 	fragment Header on PageYamlComponents {
@@ -90,7 +95,11 @@ export const query = graphql`
 		width
 		reversed
 		image {
-			src
+			src {
+				childImageSharp {
+					gatsbyImageData(layout: CONSTRAINED)
+				}
+			}
 			alt
 		}
 		ctaButtons {

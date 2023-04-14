@@ -33,7 +33,7 @@ components:
     slug: 'home-hero-firma'
     title: La soluzione per firmare i documenti e i contratti della PA direttamente in app
     subtitle: Firma con IO è la funzionalità integrata nell’app IO che consente di firmare digitalmente i documenti della Pubblica Amministrazione in modo facile, veloce e sicuro. Tutto, senza uscire dall’app.
-    background: ./hero_background.jpg
+    background: ../../assets/hero_background.jpg
     size: big
   - theme: light
     type: Editorial
@@ -48,7 +48,7 @@ components:
         target: _self
         variant: outlined
     image:
-      src: ./regular.png
+      src: ../../assets/man.jpg
       alt: a landscape photo
   - theme: light
     type: Editorial
@@ -68,9 +68,10 @@ components:
         href: '#aderisci'
         target: _self
     image:
-      src: ./portrait.png
+      src: ../../assets/woman.jpg
       alt: a landscape photo
   - theme: dark
+    width: wide
     type: Feature
     slug: 'home-feature-firma'
     title: Perché scegliere Firma con IO?
