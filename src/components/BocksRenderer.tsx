@@ -4,8 +4,8 @@ import React from 'react';
 import { Editorial } from './Editorial';
 import { Feature } from './Feature';
 import { Form } from './Form';
-import { HowTo } from './HowTo';
 import { Hero } from './Hero';
+import { HowTo } from './HowTo';
 import Accordion from './Accordion';
 import { Footer } from './Footer';
 
@@ -56,7 +56,11 @@ export const query = graphql`
 		theme
 		title
 		subtitle
-		background
+		background {
+			childImageSharp {
+				gatsbyImageData(layout: FULL_WIDTH)
+			}
+		}
 		size
 	}
 	fragment Header on PageYamlComponents {
@@ -77,7 +81,11 @@ export const query = graphql`
 		width
 		reversed
 		image {
-			src
+			src {
+				childImageSharp {
+					gatsbyImageData(layout: CONSTRAINED)
+				}
+			}
 			alt
 		}
 		ctaButtons {
