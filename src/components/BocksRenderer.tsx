@@ -62,6 +62,7 @@ export const query = graphql`
 			theme
 			label
 			href
+			target
 			active
 		}
 	}
@@ -78,6 +79,7 @@ export const query = graphql`
 		ctaButtons {
 			text
 			href
+			target
 			variant
 		}
 	}
@@ -118,6 +120,7 @@ export const query = graphql`
 			text
 			variant
 			href
+			target
 		}
 	}
 	fragment Accordion on PageYamlComponents {

@@ -9,10 +9,12 @@ components:
       - theme: light
         label: Home
         href: '/'
+        target: _self
         active: true
       - theme: light
         label: FAQ
         href: '/faq'
+        target: _self
   - theme: dark
     type: Hero
     slug: 'home-hero-firma'
@@ -30,6 +32,7 @@ components:
     ctaButtons:
       - text: Come Funziona
         href: '#come-funziona'
+        target: _self
         variant: outlined
     image:
       src: ./regular.png
@@ -45,11 +48,12 @@ components:
 
       <p>Un esempio? Qualsiasi realtà del <b>mondo accademico</b> può gestire da remoto contratti occasionali, tirocini, dottorati, assegni di ricerca o borse di studio che devono essere sottoscritti da studenti o collaboratori, solitamente non dotati di una firma digitale certificata.</p>
 
-      <p>Per avere maggiori dettagli su come il tuo ente può integrare il servizio di Firma con IO, consulta il <a href="https://docs.pagopa.it/firma-con-io/5WI4C48H2h1Kw9AkgvSM/">manuale operativo</a>.</p></p>'
+      <p>Per avere maggiori dettagli su come il tuo ente può integrare il servizio di Firma con IO, consulta il <a href="https://docs.pagopa.it/firma-con-io/5WI4C48H2h1Kw9AkgvSM/" target="_blank">manuale operativo</a>.</p></p>'
     ctaButtons:
       - text: Aderisci
         variant: contained
         href: '#aderisci'
+        target: _self
     image:
       src: ./portrait.png
       alt: a landscape photo
@@ -98,7 +102,8 @@ components:
     title: Vuoi Aderire?
     ctaButtons:
       - text: VAI ALL'ADESIONE
-        href: 'https://selfcare.pagopa.it'
+        href: 'https://selfcare.pagopa.it/onboarding/prod-io-sign'
+        target: _blank
         variant: contained
   - theme: dark
     type: BannerLink
@@ -108,3 +113,4 @@ components:
       - text: LEGGI LE FAQ
         variant: contained
         href: faq
+        target: _self
