@@ -1,5 +1,18 @@
 route: ''
 url: /
+seo:
+  metaImage:
+    localFile:
+      publicURL: ''
+  metaTitle: 'PagoPA Firma'
+  metaDescription: ''
+  metaSocial:
+    - description: ''
+      title: ''
+      socialNetwork: ''
+    - description: ''
+      title: ''
+      socialNetwork: ''
 components:
   - product: Firma Con Io
     type: Header

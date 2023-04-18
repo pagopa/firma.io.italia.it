@@ -1,5 +1,15 @@
 route: ''
 url: /FAQ
+seo:
+  metaImage:
+    localFile:
+      publicURL: ''
+  metaTitle: ''
+  metaDescription: ''
+  metaSocial:
+    - description: ''
+      title: ''
+      socialNetwork: ''
 components:
   - product: Firma Con Io
     type: Header
