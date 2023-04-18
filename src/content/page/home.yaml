@@ -107,7 +107,7 @@ components:
     notice:
       newsletter: Voglio ricevere aggiornamenti su questa e sulle altre iniziative PagoPA S.P.A, iscrivendomi alla newsletter.
       privacy: Inserendo il tuo indirizzo email stai accettando la nostra informativa sul trattamento dei dati personali.
-  - decoration: ./aderisci.svg
+  - decoration: "<img src='./aderisci.svg' alt='aderisci' />"
     type: BannerLink
     slug: 'bannerLink-firma'
     theme: light
