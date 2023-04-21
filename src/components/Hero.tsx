@@ -17,11 +17,30 @@ export const Hero = ({
 				typeof subtitle === 'string' ? <Html data={subtitle} /> : subtitle
 			}
 			background={
-				<div style={{ display: 'flex', justifyContent: 'center' }}>
+				<div
+					style={{
+						position: 'absolute',
+						width: '100%',
+						height: '100%',
+						left: 0,
+					}}
+				>
+					<div
+						style={{
+							backgroundColor: 'rgba(0, 98, 195)',
+							position: 'absolute',
+							width: '100%',
+							height: '100%',
+							opacity: 0.65,
+							zIndex: -2,
+						}}
+					/>
 					<GatsbyImage
 						image={getImage(background)}
 						alt={altText}
-						style={{ position: 'absolute', zIndex: -1, width: '100%' }}
+						style={{
+							zIndex: -3,
+						}}
 					/>
 				</div>
 			}
