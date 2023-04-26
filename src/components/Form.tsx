@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import { Container } from '@mui/system';
 import React from 'react';
-import solidDarkBackground from '../../static/hero-solid-dark.jpg';
+import solidLightBackground from '../../static/hero-solid-light.jpg';
 
 export const Form = ({
 	title,
@@ -21,9 +21,8 @@ export const Form = ({
 }) => (
 	<Box
 		component="section"
-		bgcolor="primary.main"
 		sx={{
-			backgroundImage: `url(${solidDarkBackground})`,
+			backgroundImage: `url(${solidLightBackground})`,
 			backgroundSize: 'cover',
 			backgroundPosition: 'center',
 		}}
@@ -34,7 +33,6 @@ export const Form = ({
 					<form>
 						<Typography
 							variant="h3"
-							color="primary.contrastText"
 							pt={8}
 							mb={4}
 							textAlign="center"
@@ -69,31 +67,24 @@ export const Form = ({
 						</Stack>
 						<Grid container mb={1}>
 							<Grid item xs={11}>
-								<Typography variant="caption" color="primary.contrastText">
+								<Typography variant="caption" >
 									{notice.newsletter}
 								</Typography>
 							</Grid>
 							<Grid item xs={1}>
-								<Checkbox
-									sx={{
-										color: 'primary.contrastText',
-										'&.Mui-checked': {
-											color: 'primary.contrastText',
-										},
-									}}
-								/>
+								<Checkbox />
 							</Grid>
 						</Grid>
 						<Divider />
 						<Stack spacing={4} pt={4} pb={8}>
 							<Stack direction="row" justifyContent="center">
-								<Button variant="contained" color="negative">
+								<Button variant="contained" color="primary">
 									Invia Richiesta
 								</Button>
 							</Stack>
 							<Typography
 								variant="caption-semibold"
-								color="primary.contrastText"
+
 								textAlign="center"
 							>
 								{notice.privacy}

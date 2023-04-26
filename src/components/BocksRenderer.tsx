@@ -120,6 +120,10 @@ export const query = graphql`
 	}
 	fragment PhotoVideo on PageYamlComponents {
 		src
+		theme
+		title
+		subtitle
+		full
 	}
 	fragment Form on PageYamlComponents {
 		title

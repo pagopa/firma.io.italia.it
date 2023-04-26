@@ -14,7 +14,7 @@ seo:
       title: ''
       socialNetwork: ''
 components:
-  - product: Firma Con Io
+  - product: Firma Con IO
     type: Header
     theme: light
     slug: 'home-header'
@@ -28,11 +28,16 @@ components:
         label: FAQ
         href: '/faq'
         target: _self
+    ctaButtons:
+      - text: Area Riservata Enti
+        color: primary
+        variant: contained
+        size: small
   - theme: dark
     type: Hero
     slug: 'home-hero-firma'
     title: La soluzione per firmare i documenti e i contratti della PA direttamente in app
-    subtitle: Firma con IO è la funzionalità integrata nell’app IO che consente di firmare digitalmente i documenti della Pubblica Amministrazione in modo facile, veloce e sicuro. Tutto, senza uscire dall’app.
+    subtitle: <b>Firma con IO</b> è la funzionalità integrata nell’app IO che consente di firmare digitalmente i documenti della Pubblica Amministrazione in modo facile, veloce e sicuro. Tutto, senza uscire dall’app.
     background: ./hero_background.jpg
     size: big
   - theme: light
@@ -41,7 +46,7 @@ components:
     width: wide
     eyelet: ''
     title: Una firma a valore legale, a disposizione di tutti
-    body: Firma con IO è una Firma Elettronica Qualificata “one shot” con il massimo valore legale, pari alla firma autografa, che consente agli enti di digitalizzare l’iter di raccolta firme. Ai cittadini basta avere IO per firmare documenti e contratti direttamente sul proprio dispositivo.
+    body: <p><b>Firma con IO</b> è una <b>Firma Elettronica Qualificata</b> “one shot” con il massimo valore legale, pari alla firma autografa, che consente agli <b>enti</b> di digitalizzare l’iter di raccolta firme. Ai <b>cittadini basta avere IO</b> per firmare documenti e contratti direttamente sul proprio dispositivo.</p>
     ctaButtons:
       - text: Come Funziona
         href: '#come-funziona'
@@ -57,11 +62,9 @@ components:
     width: wide
     eyelet: ''
     title: Tutti i processi di firma, senza spostamenti
-    body: '<p><p>Grazie a Firma con IO lo scambio di documenti tra enti e cittadini è immediato. Non serve apporre la firma in presenza o scannerizzare copie cartacee da inviare in pdf, perché tutto avviene su IO.</p>
-
+    body: '<p>Grazie a <b>Firma con IO</b> lo scambio di documenti tra enti e cittadini è immediato. Non serve apporre la firma in presenza o scannerizzare copie cartacee da inviare in pdf, perché tutto avviene su IO.</p>
       <p>Un esempio? Qualsiasi realtà del <b>mondo accademico</b> può gestire da remoto contratti occasionali, tirocini, dottorati, assegni di ricerca o borse di studio che devono essere sottoscritti da studenti o collaboratori, solitamente non dotati di una firma digitale certificata.</p>
-
-      <p>Per avere maggiori dettagli su come il tuo ente può integrare il servizio di Firma con IO, consulta il <a href="https://docs.pagopa.it/firma-con-io/5WI4C48H2h1Kw9AkgvSM/" target="_blank">manuale operativo</a>.</p></p>'
+      <p>Per avere maggiori dettagli su come il tuo ente può integrare il servizio di <b>Firma con IO</b>, consulta il <a href="https://docs.pagopa.it/firma-con-io/5WI4C48H2h1Kw9AkgvSM/" target="_blank">manuale operativo</a>.</p>'
     ctaButtons:
       - text: Aderisci
         variant: contained
@@ -98,9 +101,11 @@ components:
         description: L’utente riceve tramite messaggio su IO i documenti firmati, che possono essere condivisi o scaricati sul proprio dispositivo.
     rowMaxSteps: 4
     stepsAlign: center
-  - src: ./typing-on-a-computer.mp4
+  - src: https://www.youtube.com/embed/YxpWC1Vq4to
     type: PhotoVideo
     slug: 'home-photoVideo-firma'
+    full: true,
+    theme: 'dark'
   - title: Vuoi altre informazioni sull’adesione?
     type: Form
     slug: 'aderisci'
@@ -110,15 +115,15 @@ components:
   - decoration: "<img src='./aderisci.svg' alt='aderisci' />"
     type: BannerLink
     slug: 'bannerLink-firma'
-    theme: light
+    theme: dark
     body: Se hai già le informazioni necessarie, procedi con la richiesta di adesione per il tuo ente
     title: Vuoi Aderire?
     ctaButtons:
       - text: VAI ALL'ADESIONE
-        href: 'https://selfcare.pagopa.it/onboarding/prod-io-sign'
+        href: https://selfcare.pagopa.it/onboarding/prod-io-sign
         target: _blank
         variant: contained
-  - theme: dark
+  - theme: light
     type: BannerLink
     slug: 'home-bannerLink-faq'
     title: Dubbi o domande?
