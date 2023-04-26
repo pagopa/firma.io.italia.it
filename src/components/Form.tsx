@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import { Container } from '@mui/system';
 import React from 'react';
-import solidLightBackground from '../../public/hero-solid-light.jpg';
+import solidLightBackground from '../../static/hero-solid-light.jpg';
 
 export const Form = ({
 	title,
