@@ -5,22 +5,6 @@ import { Editorial } from './Editorial';
 import { Feature } from './Feature';
 import { Form } from './Form';
 import { HowTo } from './HowTo';
-import * as MUI from '@mui/material';
-import * as MI from '@mui/icons-material';
-import JsxParser from 'react-jsx-parser';
-
-export const renderJSX = (JSX: string) => {
-	try {
-	const isJSX = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
-	// @ts-ignore
-    if (isJSX(JSX)) return <JsxParser components={{ ...MUI, ...MI}} jsx={JSX}/>
-	return false;
-  } catch (e) {
-	console.error(e);
-    return false
-  }
-};
-
 
 // This object is used to map component names to React components
 const componentsMap: {
@@ -43,10 +27,9 @@ const Block = ({
 	block: Queries.BlocksUnionFragment;
 }): JSX.Element => {
 	const Component = componentsMap[block.type];
-	const enhancedBlockProps = Object.entries(block).reduce( ( accu, [key, value]) => ({ ...accu, [key]: renderJSX(`${value}`) || value}), {});
 	return !!Component ? (
 		<div id={block.slug} key={block.slug}>
-			<Component { ...enhancedBlockProps }  />
+			<Component { ...block }  />
 		</div>
 	) : null;
 };
