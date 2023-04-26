@@ -11,16 +11,16 @@ import JsxParser from 'react-jsx-parser';
 
 export const renderJSX = (JSX: string) => {
 	try {
-	const isJSX = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
-	// @ts-ignore
-    if (isJSX(JSX)) return <JsxParser components={{ ...MUI, ...MI}} jsx={JSX}/>
-	return false;
-  } catch (e) {
-	console.error(e);
-    return false
-  }
+		const isJSX = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
+		if (isJSX(JSX))
+			// @ts-ignore
+			return <JsxParser components={{ ...MUI, ...MI }} jsx={JSX} />;
+		return false;
+	} catch (e) {
+		console.error(e);
+		return false;
+	}
 };
-
 
 // This object is used to map component names to React components
 const componentsMap: {
@@ -31,6 +31,7 @@ const componentsMap: {
 	Editorial: Editorial,
 	Feature: Feature,
 	Form: Form,
+	Footer: Pagopa.Footer,
 	Header: Pagopa.Header,
 	Hero: Pagopa.Hero,
 	HowTo: HowTo,
@@ -43,10 +44,16 @@ const Block = ({
 	block: Queries.BlocksUnionFragment;
 }): JSX.Element => {
 	const Component = componentsMap[block.type];
-	const enhancedBlockProps = Object.entries(block).reduce( ( accu, [key, value]) => ({ ...accu, [key]: renderJSX(`${value}`) || value}), {});
+	const enhancedBlockProps = Object.entries(block).reduce(
+		(accu, [key, value]) => ({
+			...accu,
+			[key]: renderJSX(`${value}`) || value,
+		}),
+		{}
+	);
 	return !!Component ? (
 		<div id={block.slug} key={block.slug}>
-			<Component { ...enhancedBlockProps }  />
+			<Component {...enhancedBlockProps} />
 		</div>
 	) : null;
 };
@@ -153,6 +160,67 @@ export const query = graphql`
 			content
 		}
 	}
+	fragment Footer on PageYamlComponents {
+		links {
+			aboutUs {
+				title
+				links {
+					label
+					href
+					ariaLabel
+					linkType
+				}
+			}
+			resources {
+				title
+				links {
+					label
+					href
+					ariaLabel
+					linkType
+				}
+			}
+			followUs {
+				title
+				links {
+					label
+					href
+					ariaLabel
+					linkType
+				}
+				socialLinks {
+					icon
+					title
+					href
+					ariaLabel
+				}
+			}
+		}
+		languages {
+			it {
+				it
+				en
+				fr
+			}
+			en {
+				it
+				en
+				fr
+			}
+			fr {
+				it
+				en
+				fr
+			}
+		}
+		companyLink {
+			href
+			ariaLabel
+		}
+		legalInfo
+		currentLangCode
+		productsJsonUrl
+	}
 	fragment BlocksUnion on PageYamlComponents {
 		type
 		slug
@@ -160,6 +228,7 @@ export const query = graphql`
 		...BannerLink
 		...Editorial
 		...Feature
+		...Footer
 		...Form
 		...Header
 		...Hero
