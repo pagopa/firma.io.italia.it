@@ -60,6 +60,8 @@ components:
         content: Solamente nei server di PagoPA. Solo al momento della firma viene inviato al QTSP (Qualified Trusted Service Provider) per l’emissione del certificato one shot e per la firma del documento.
       - header: Sono tenuto alla conservazione dei documenti firmati?
         content: Sì, l’app IO li terrà soltanto per 90 giorni, per consentire all’utente di scaricare, salvare o condividere i documenti.<br>La conservazione del documento a norma - e l’eventuale restituzione all’utente, passati i 90 giorni, resta una tua responsabilità.
+      - header: Chi è tenuto a conservare il certificato di firma qualificata one shot?
+        content: Il QTSP (Qualified Trusted Service Provider) è tenuto a conservare il certificato one shot per 20 anni.
       - header: Quanto dura una richiesta di firma una volta che la mando?
         content: Puoi scegliere tu una data di scadenza della tua richiesta di firma, dopo quella data l’utente non potrà più firmare il documento. Se scegli di non impostare la data di scadenza, manterremo la richiesta di firma attiva per tre mesi.
       - header: È gestita la Doppia Firma?
