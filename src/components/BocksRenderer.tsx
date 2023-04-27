@@ -15,6 +15,7 @@ const componentsMap: {
 	Editorial: Editorial,
 	Feature: Feature,
 	Form: Form,
+	Footer: Pagopa.Footer,
 	Header: Pagopa.Header,
 	Hero: Pagopa.Hero,
 	HowTo: HowTo,
@@ -136,6 +137,67 @@ export const query = graphql`
 			content
 		}
 	}
+	fragment Footer on PageYamlComponents {
+		links {
+			aboutUs {
+				title
+				links {
+					label
+					href
+					ariaLabel
+					linkType
+				}
+			}
+			resources {
+				title
+				links {
+					label
+					href
+					ariaLabel
+					linkType
+				}
+			}
+			followUs {
+				title
+				links {
+					label
+					href
+					ariaLabel
+					linkType
+				}
+				socialLinks {
+					icon
+					title
+					href
+					ariaLabel
+				}
+			}
+		}
+		languages {
+			it {
+				it
+				en
+				fr
+			}
+			en {
+				it
+				en
+				fr
+			}
+			fr {
+				it
+				en
+				fr
+			}
+		}
+		companyLink {
+			href
+			ariaLabel
+		}
+		legalInfo
+		currentLangCode
+		productsJsonUrl
+	}
 	fragment BlocksUnion on PageYamlComponents {
 		type
 		slug
@@ -143,6 +205,7 @@ export const query = graphql`
 		...BannerLink
 		...Editorial
 		...Feature
+		...Footer
 		...Form
 		...Header
 		...Hero
