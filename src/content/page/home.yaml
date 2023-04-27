@@ -107,11 +107,12 @@ components:
     full: true,
     theme: 'dark'
   - title: Vuoi altre informazioni sull’adesione?
+    subtitle: Per altri dettagli su Firma con IO, inserisci i dati richiesti. Ti contatteremo al più presto per rispondere alle tue domande.
     type: Form
     slug: 'aderisci'
     notice:
-      newsletter: Voglio ricevere aggiornamenti su questa e sulle altre iniziative PagoPA S.P.A, iscrivendomi alla newsletter.
-      privacy: Inserendo il tuo indirizzo email stai accettando la nostra informativa sul trattamento dei dati personali.
+      newsletter: Voglio iscrivermi alla newsletter e ricevere aggiornamenti su questa e sulle altre iniziative PagoPA s.p.a..
+      privacy: Inserendo il tuo indirizzo email stai accettando la nostra informativa sul trattamento dei dati personali per la Privacy Policy.
   - decoration: "<img src='./aderisci.svg' alt='aderisci' />"
     type: BannerLink
     slug: 'bannerLink-firma'

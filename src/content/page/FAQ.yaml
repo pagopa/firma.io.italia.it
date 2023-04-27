@@ -33,31 +33,39 @@ components:
   - theme: light
     type: Accordion
     slug: 'faq-accordion-generali'
-    title: Generali
+    title: Per i cittadini 
     layout: center
     accordionItems:
-      - header: Cosa significa che l'app è disponibile negli store in versione open beta?
-        content: Questo dipende da dove risiedi. Sono già diverse migliaia i servizi erogati dagli enti locali e nazionali tramite IO e molti se ne aggiungeranno in futuro; a questo link puoi consultare la lista, in continuo aggiornamento, di quelli già integrati e disponibili all’interno della sezione Servizi dell’app.
-      - header: Perché, dopo un anno di test, l’app è ancora in beta?
-        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      - header: I cittadini possono contribuire allo sviluppo dell’app anche ora che IO è negli store online?
-        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      - header: Perchè devo per forza avere SPID o CIE per usare la app?
-        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      - header: Dove trovo i documenti che ho firmato?
+        content: Riceverai un messaggio in app con i documenti firmati. Potrai visualizzarli, condividerli o scaricarli entro 90 giorni dalla ricezione del messaggio.
+      - header: Perché devo condividere i miei dati?
+        content: I dati che condividi serviranno al fornitore della firma digitale per offrirti il servizio e certificare la tua firma.
+      - header: Quanto dura una richiesta di firma dopo averla ricevuta dall’ente?
+        content: La data di scadenza della richiesta di firma è a discrezione dell’ente. Dopo quella data non sarà più possibile firmare il documento.
+      - header: Posso firmare dei documenti per conto di un’altra persona? 
+        content: No. La persona a cui viene richiesta la firma deve coincidere con la persona che ha effettuato l’accesso in app.
   - theme: light
     type: Accordion
     slug: 'faq-accordion-enti'
     title: Per gli enti
     layout: center
     accordionItems:
-      - header: Quali servizi sono già disponibili sull’ app?
-        content: Questo dipende da dove risiedi. Sono già diverse migliaia i servizi erogati dagli enti locali e nazionali tramite IO e molti se ne aggiungeranno in futuro; a questo link puoi consultare la lista, in continuo aggiornamento, di quelli già integrati e disponibili all’ interno della sezione Servizi dell’ app.
-      - header: Come posso usare i servizi in lista?
-        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      - header: Che tipo di comunicazioni posso ricevere?
-        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      - header: Perché devo per forza avere SPID o CIE per usare la app?
-        content: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      - header: Come aderire a Firma con IO
+        content: Per poter usufruire di questa funzionalità, l’ente deve per prima cosa completare il processo di onboarding nell’<a href='https://selfcare.pagopa.it/auth/login?onSuccess=%2Fonboarding%2Fprod-io-sign'>Area Riservata</a> di PagoPA. 
+      - header: Devo aver già attivato altri servizi su app IO per aderire a Firma?
+        content: Non è necessario. Si può scegliere di aderire solo a questa funzionalità 
+      - header: Che tipologie di file supporta Firma con IO?
+        content: 'Firma con IO supporta la firma delle seguenti tipologie di file PDF: PDF standard; PDF/A-2A; e PDF già firmati con firma PAdES.'
+      - header: Nella fase in cui il documento viene inviato per la firma ma non è stato ancora firmato, dove risiede?
+        content: Solamente nei server di PagoPA. Solo al momento della firma viene inviato al QTSP (Qualified Trusted Service Provider) per l’emissione del certificato one shot e per la firma del documento.
+      - header: Sono tenuto alla conservazione dei documenti firmati?
+        content: Sì, l’app IO li terrà soltanto per 90 giorni, per consentire all’utente di scaricare, salvare o condividere i documenti.<br>La conservazione del documento a norma - e l’eventuale restituzione all’utente, passati i 90 giorni, resta una tua responsabilità.
+      - header: Quanto dura una richiesta di firma una volta che la mando?
+        content: Puoi scegliere tu una data di scadenza della tua richiesta di firma, dopo quella data l’utente non potrà più firmare il documento. Se scegli di non impostare la data di scadenza, manterremo la richiesta di firma attiva per tre mesi.
+      - header: È gestita la Doppia Firma?
+        content: Si, Firma con IO gestisce la doppia firma. E’ infatti  possibile richiedere all’utente la firma di un documento PDF già firmato con firma PAdES (e.g., un documento con all’interno già la firma del soggetto con potere di firma dell’ente).
+      - header: L’ente deve inviare all’utente un messaggio per ogni documento da firmare? 
+        content: No. Possono essere firmati più documenti con una sola notifica. L’utente visualizza l’anteprima del primo documento, subito dopo una schermata di riepilogo con la lista delle firme da apporre e successivamente gli ulteriori documenti da firmare. 
   - type: Footer
     currentLangCode: it
     companyLink:

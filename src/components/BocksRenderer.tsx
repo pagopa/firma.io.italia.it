@@ -5,6 +5,7 @@ import { Editorial } from './Editorial';
 import { Feature } from './Feature';
 import { Form } from './Form';
 import { HowTo } from './HowTo';
+import Accordion from './Accordion';
 import * as MUI from '@mui/material';
 import * as MI from '@mui/icons-material';
 import JsxParser from 'react-jsx-parser';
@@ -26,7 +27,7 @@ export const renderJSX = (JSX: string) => {
 const componentsMap: {
 	[key: string]: (props: any) => JSX.Element;
 } = {
-	Accordion: Pagopa.Accordion,
+	Accordion,
 	BannerLink: Pagopa.BannerLink,
 	Editorial: Editorial,
 	Feature: Feature,
@@ -134,6 +135,7 @@ export const query = graphql`
 	}
 	fragment Form on PageYamlComponents {
 		title
+		subtitle
 		notice {
 			newsletter
 			privacy
