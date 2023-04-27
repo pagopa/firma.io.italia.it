@@ -15,8 +15,10 @@ import solidLightBackground from '../../static/hero-solid-light.jpg';
 export const Form = ({
 	title,
 	notice,
+	subtitle
 }: {
 	title: string;
+	subtitle: string;
 	notice: { newsletter: string; privacy: string };
 }) => (
 	<Box
@@ -27,17 +29,23 @@ export const Form = ({
 			backgroundPosition: 'center',
 		}}
 	>
-		<Container maxWidth="sm">
+		<Container maxWidth="md">
 			<Grid container justifyContent="center">
-				<Grid item xs={10}>
+				<Grid item md={8}>
 					<form>
 						<Typography
 							variant="h3"
 							pt={8}
-							mb={4}
+              mb={1}
 							textAlign="center"
 						>
 							{title}
+						</Typography>
+						<Typography
+							paragraph
+							textAlign="center"
+						>
+							{subtitle}
 						</Typography>
 						<Stack spacing={2} mb={4}>
 							<TextField

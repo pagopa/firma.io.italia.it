@@ -11,7 +11,7 @@ import { Hero } from './Hero';
 const componentsMap: {
 	[key: string]: (props: any) => JSX.Element;
 } = {
-	Accordion: Pagopa.Accordion,
+	Accordion,
 	BannerLink: Pagopa.BannerLink,
 	Editorial,
 	Feature,
@@ -112,6 +112,7 @@ export const query = graphql`
 	}
 	fragment Form on PageYamlComponents {
 		title
+		subtitle
 		notice {
 			newsletter
 			privacy
