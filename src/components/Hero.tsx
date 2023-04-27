@@ -1,3 +1,4 @@
+import {Box} from '@mui/material';
 import Pagopa from '@pagopa/pagopa-editorial-components/';
 import { HeroProps } from '@pagopa/pagopa-editorial-components/dist/components/Hero';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
@@ -40,6 +41,7 @@ export const Hero = ({
 						alt={altText}
 						style={{
 							zIndex: -3,
+							height: '100%',
 						}}
 					/>
 				</div>
