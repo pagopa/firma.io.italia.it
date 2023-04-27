@@ -5,22 +5,7 @@ import { Editorial } from './Editorial';
 import { Feature } from './Feature';
 import { Form } from './Form';
 import { HowTo } from './HowTo';
-import * as MUI from '@mui/material';
-import * as MI from '@mui/icons-material';
-import JsxParser from 'react-jsx-parser';
-
-export const renderJSX = (JSX: string) => {
-	try {
-		const isJSX = RegExp.prototype.test.bind(/(<([^>]+)>)/i);
-		if (isJSX(JSX))
-			// @ts-ignore
-			return <JsxParser components={{ ...MUI, ...MI }} jsx={JSX} />;
-		return false;
-	} catch (e) {
-		console.error(e);
-		return false;
-	}
-};
+import { Hero } from './Hero';
 
 // This object is used to map component names to React components
 const componentsMap: {
@@ -28,13 +13,13 @@ const componentsMap: {
 } = {
 	Accordion: Pagopa.Accordion,
 	BannerLink: Pagopa.BannerLink,
-	Editorial: Editorial,
-	Feature: Feature,
-	Form: Form,
+	Editorial,
+	Feature,
+	Form,
 	Footer: Pagopa.Footer,
 	Header: Pagopa.Header,
-	Hero: Pagopa.Hero,
-	HowTo: HowTo,
+	Hero,
+	HowTo,
 	PhotoVideo: Pagopa.PhotoVideo,
 };
 
@@ -44,16 +29,9 @@ const Block = ({
 	block: Queries.BlocksUnionFragment;
 }): JSX.Element => {
 	const Component = componentsMap[block.type];
-	const enhancedBlockProps = Object.entries(block).reduce(
-		(accu, [key, value]) => ({
-			...accu,
-			[key]: renderJSX(`${value}`) || value,
-		}),
-		{}
-	);
 	return !!Component ? (
 		<div id={block.slug} key={block.slug}>
-			<Component {...enhancedBlockProps} />
+			<Component { ...block }  />
 		</div>
 	) : null;
 };
