@@ -5,6 +5,7 @@ import { Editorial } from './Editorial';
 import { Feature } from './Feature';
 import { Form } from './Form';
 import { HowTo } from './HowTo';
+import { Hero } from './Hero';
 
 // This object is used to map component names to React components
 const componentsMap: {
@@ -12,13 +13,13 @@ const componentsMap: {
 } = {
 	Accordion: Pagopa.Accordion,
 	BannerLink: Pagopa.BannerLink,
-	Editorial: Editorial,
-	Feature: Feature,
-	Form: Form,
+	Editorial,
+	Feature,
+	Form,
 	Footer: Pagopa.Footer,
 	Header: Pagopa.Header,
-	Hero: Pagopa.Hero,
-	HowTo: HowTo,
+	Hero,
+	HowTo,
 	PhotoVideo: Pagopa.PhotoVideo,
 };
 
