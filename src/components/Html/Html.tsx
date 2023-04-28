@@ -8,7 +8,7 @@ export const Html = ({
 	data: string;
 	forwardRef?: MutableRefObject<any>;
 }) => (
-	<div
+	<span
 		ref={forwardRef}
 		dangerouslySetInnerHTML={{
 			__html: data,
