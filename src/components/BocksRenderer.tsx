@@ -7,6 +7,7 @@ import { Form } from './Form';
 import { HowTo } from './HowTo';
 import { Hero } from './Hero';
 import Accordion from './Accordion';
+import { Footer } from './Footer';
 
 // This object is used to map component names to React components
 const componentsMap: {
@@ -17,7 +18,7 @@ const componentsMap: {
 	Editorial,
 	Feature,
 	Form,
-	Footer: Pagopa.Footer,
+	Footer,
 	Header: Pagopa.Header,
 	Hero,
 	HowTo,
@@ -32,7 +33,7 @@ const Block = ({
 	const Component = componentsMap[block.type];
 	return !!Component ? (
 		<div id={block.slug} key={block.slug}>
-			<Component { ...block }  />
+			<Component {...block} />
 		</div>
 	) : null;
 };
