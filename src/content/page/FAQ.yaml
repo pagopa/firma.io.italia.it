@@ -23,6 +23,13 @@ components:
         label: FAQ
         href: /faq
         active: true
+    ctaButtons:
+      - text: Area Riservata Enti
+        color: primary
+        variant: contained
+        size: small
+        target: _blank
+        href: https://selfcare.pagopa.it/auth/login?onSuccess=%2Fonboarding%2Fprod-io-sign
   - theme: dark
     type: Hero
     slug: 'faq-hero'

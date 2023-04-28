@@ -33,6 +33,8 @@ components:
         color: primary
         variant: contained
         size: small
+        target: _blank
+        href: https://selfcare.pagopa.it/auth/login?onSuccess=%2Fonboarding%2Fprod-io-sign
   - theme: dark
     type: Hero
     slug: 'home-hero-firma'
@@ -113,7 +115,9 @@ components:
     notice:
       newsletter: Voglio iscrivermi alla newsletter e ricevere aggiornamenti su questa e sulle altre iniziative PagoPA s.p.a..
       privacy: Inserendo il tuo indirizzo email stai accettando la nostra informativa sul trattamento dei dati personali per la Privacy Policy.
-  - decoration: "<img src='./aderisci.svg' alt='aderisci' />"
+  - decoration:
+      src: ./aderisci.svg
+      alt: aderisci
     type: BannerLink
     slug: 'bannerLink-firma'
     theme: dark
