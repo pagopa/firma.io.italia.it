@@ -121,7 +121,10 @@ export const query = graphql`
 		}
 	}
 	fragment BannerLink on PageYamlComponents {
-		decoration
+		decoration {
+			src
+			alt
+		}
 		theme
 		body
 		title
