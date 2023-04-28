@@ -6,6 +6,7 @@ import { Feature } from './Feature';
 import { Form } from './Form';
 import { HowTo } from './HowTo';
 import { Hero } from './Hero';
+import Accordion from './Accordion';
 
 // This object is used to map component names to React components
 const componentsMap: {
