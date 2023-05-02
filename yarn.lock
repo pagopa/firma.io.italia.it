@@ -1725,10 +1725,10 @@
     fp-ts "^2.12.3"
     io-ts "^2.2.18"
 
-"@pagopa/pagopa-editorial-components@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@pagopa/pagopa-editorial-components/-/pagopa-editorial-components-0.0.7.tgz#e4eedcf3e02468c719c7eb35301c33baafb40489"
-  integrity sha512-KMpfF6g05r1n8+nzcfLsrKRERRjVU7AWBCE50X8//ICTA+4FRMkPjWYgdt/AAf3bJ2Ney2by6CZUbI3z4JdGpQ==
+"@pagopa/pagopa-editorial-components@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@pagopa/pagopa-editorial-components/-/pagopa-editorial-components-0.0.9.tgz#6318102248c7264fc0928a68f046923404833466"
+  integrity sha512-Zr5K1tUKzFJEDEhdcNVTi2ykBqJuVezotw0hSlht1vnTDnFT/KQh2YJ0jP/yT6YVa/tX2GqVgJZ9IBFhR1aIFA==
   dependencies:
     "@pagopa/mui-italia" "^0.8.12"
     react-swipeable-views "^0.14.0"
@@ -5064,9 +5064,9 @@ forwarded@0.2.0:
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==
 
 fp-ts@^2.12.3:
-  version "2.13.2"
-  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.13.2.tgz#60ad54d91f16452594b1e29cd8816eed929c83a4"
-  integrity sha512-diX6PbILL9SpFxuiB2w38e/jy20h7BwOtVRuohkGGni9lBnR61CBdUpm33/5RVgkz2nkAZ9MH3DMmJdlwOyDOA==
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.14.0.tgz#97ac3d9f002dcd02f93ca1269ae14a7fcb805582"
+  integrity sha512-QLagLSYAgMA00pZzUzeksH/78Sd14y7+Gc2A8Yaja3/IpGOFMdm/gYBuDMxYqLsJ58iT5lz+bJb953RAeFfp1A==
 
 fraction.js@^4.2.0:
   version "4.2.0"
