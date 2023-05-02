@@ -35,7 +35,7 @@ components:
     slug: 'faq-hero'
     title: FAQ
     subtitle: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    background: 'https://deploy-preview-10--resonant-platypus-13009d.netlify.app/static/media/hero-solid-dark.34ea646f.jpg' # should be ./hero-solid-dark.jpg instead
+    background: ../../assets/hero-solid-dark.jpg
     size: small
   - theme: light
     type: Accordion
