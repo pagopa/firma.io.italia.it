@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import { BlocksRenderer } from '../../components/BocksRenderer';
+import { BlocksRenderer } from '../../components/BlocksRenderer';
 import { SEO } from '../../components/SEO';
 
 const MdxPage = ({

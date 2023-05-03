@@ -20,6 +20,7 @@ type FooterProps = LangSwitchProps & {
 export const Footer = ({ legalInfo, ...props }: FooterProps) => (
 	<Pagopa.Footer
 		{...props}
+		onLanguageChanged={() => null}
 		legalInfo={
 			typeof legalInfo === 'string' ? <Html data={legalInfo} /> : legalInfo
 		}

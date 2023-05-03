@@ -191,18 +191,6 @@ export const query = graphql`
 		languages {
 			it {
 				it
-				en
-				fr
-			}
-			en {
-				it
-				en
-				fr
-			}
-			fr {
-				it
-				en
-				fr
 			}
 		}
 		companyLink {
