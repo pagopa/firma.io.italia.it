@@ -34,7 +34,6 @@ components:
     type: Hero
     slug: 'faq-hero'
     title: FAQ
-    subtitle: Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     background: ../../assets/hero-solid-dark.jpg
     size: small
   - theme: light
