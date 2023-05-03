@@ -1,4 +1,3 @@
-import {Box} from '@mui/material';
 import Pagopa from '@pagopa/pagopa-editorial-components/';
 import { HeroProps } from '@pagopa/pagopa-editorial-components/dist/components/Hero';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
@@ -7,7 +6,7 @@ import { Html } from './Html';
 
 export const Hero = ({
 	background,
-	altText,
+	altText = '',
 	subtitle,
 	...props
 }: HeroProps) => {
