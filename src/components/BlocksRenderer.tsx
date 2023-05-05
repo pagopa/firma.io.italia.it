@@ -1,13 +1,17 @@
-import { BannerLink, Header, PhotoVideo } from '@pagopa/pagopa-editorial-components/';
+import {
+	BannerLink,
+	Header,
+	PhotoVideo,
+} from '@pagopa/pagopa-editorial-components/';
 import { graphql } from 'gatsby';
 import React from 'react';
+import Accordion from './Accordion';
 import { Editorial } from './Editorial';
 import { Feature } from './Feature';
+import { Footer } from './Footer';
 import { Form } from './Form';
 import { Hero } from './Hero';
 import { HowTo } from './HowTo';
-import Accordion from './Accordion';
-import { Footer } from './Footer';
 
 // This object is used to map component names to React components
 const componentsMap: {
@@ -17,8 +21,8 @@ const componentsMap: {
 	BannerLink,
 	Editorial,
 	Feature,
-	Form,
 	Footer,
+	Form,
 	Header,
 	Hero,
 	HowTo,
