@@ -21,7 +21,7 @@
     "@mdx-js/react": "^2.3.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.11.16",
-    "@pagopa/pagopa-editorial-components": "^0.0.9",
+    "@pagopa/pagopa-editorial-components": "^0.0.10",
     "@types/react-helmet": "^6.1.6",
     "gatsby": "^5.8.1",
     "gatsby-plugin-image": "^3.9.0",

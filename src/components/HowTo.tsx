@@ -1,4 +1,4 @@
-import Pagopa from '@pagopa/pagopa-editorial-components/';
+import { HowTo as ECHowTo } from '@pagopa/pagopa-editorial-components/';
 import { HowToProps } from '@pagopa/pagopa-editorial-components/dist/components/HowTo';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
@@ -11,7 +11,7 @@ const Icons = [
 ];
 
 export const HowTo = (props: HowToProps) => (
-	<Pagopa.HowTo
+	<ECHowTo
 		{...props}
 		steps={props.steps.map((step, i) => ({ ...step, icon: Icons[i] }))}
 	/>
