@@ -1,6 +1,6 @@
 import { Feature as ECFeature } from '@pagopa/pagopa-editorial-components/';
 import { FeatureProps } from '@pagopa/pagopa-editorial-components/dist/components/Feature/Feature';
-import {StaticImage} from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 const Icons = [

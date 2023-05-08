@@ -1,7 +1,4 @@
-import {
-	BannerLink,
-	PhotoVideo,
-} from '@pagopa/pagopa-editorial-components/';
+import { BannerLink, PhotoVideo } from '@pagopa/pagopa-editorial-components';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Accordion from './Accordion';

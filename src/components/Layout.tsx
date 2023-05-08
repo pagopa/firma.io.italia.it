@@ -1,12 +1,18 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { Header } from '@pagopa/pagopa-editorial-components/';
-import { Footer } from './components/Footer';
+import { Header as ECHeader } from '@pagopa/pagopa-editorial-components/';
+import { Footer } from './Footer';
 import { useLocation } from '@reach/router';
 import { MenuDropdownProp } from '@pagopa/pagopa-editorial-components/dist/components/Header/components/MenuDropdown';
-import { SEO } from './components/SEO';
+import { SEO, SEOProps } from './SEO';
 
-export default function Layout({ children, seo }) {
+export const Layout = ({
+	children,
+	seo,
+}: {
+	children: React.ReactNode;
+	seo?: SEOProps['meta'];
+}) => {
 	const {
 		layoutYaml: { footer, header },
 	} = useStaticQuery(graphql`
@@ -98,10 +104,10 @@ export default function Layout({ children, seo }) {
 
 	return (
 		<>
-			<SEO meta={seo} />
-			{header && <Header {...header} menu={menu} />}
+			{seo && <SEO meta={seo} />}
+			{header && <ECHeader {...header} menu={menu} />}
 			<main>{children}</main>
 			{footer && <Footer {...footer} />}
 		</>
 	);
-}
+};

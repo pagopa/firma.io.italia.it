@@ -1,8 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { BlocksRenderer } from '../../components/BlocksRenderer';
-import { SEO } from '../../components/SEO';
-import Layout from '../../Layout';
+import { Layout } from '../../components/Layout';
 
 const MdxPage = ({
 	data: {
