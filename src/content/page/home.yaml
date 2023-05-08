@@ -14,7 +14,9 @@ seo:
       title: ''
       socialNetwork: ''
 components:
-  - product: Firma Con IO
+  - product:
+      name: Firma Con IO
+      href: /
     type: Header
     theme: light
     slug: 'home-header'

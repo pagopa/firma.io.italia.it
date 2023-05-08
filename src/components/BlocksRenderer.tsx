@@ -64,7 +64,10 @@ export const query = graphql`
 		size
 	}
 	fragment Header on PageYamlComponents {
-		product
+		product {
+			name
+			href
+		}
 		theme
 		menu {
 			theme
