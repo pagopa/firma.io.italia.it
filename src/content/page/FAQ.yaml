@@ -4,34 +4,13 @@ seo:
   metaImage:
     localFile:
       publicURL: ''
-  metaTitle: ''
-  metaDescription: ''
+  metaTitle: 'faq'
+  metaDescription: 'faq page'
   metaSocial:
     - description: ''
       title: ''
       socialNetwork: ''
 components:
-  - product:
-      name: Firma Con IO
-      href: /
-    type: Header
-    slug: 'faq-header'
-    theme: light
-    menu:
-      - theme: light
-        label: Home
-        href: /
-      - theme: light
-        label: FAQ
-        href: /faq
-        active: true
-    ctaButtons:
-      - text: Area Riservata Enti
-        color: primary
-        variant: contained
-        size: small
-        target: _blank
-        href: https://selfcare.pagopa.it/auth/login?onSuccess=%2Fonboarding%2Fprod-io-sign
   - theme: dark
     type: Hero
     slug: 'faq-hero'
@@ -76,88 +55,3 @@ components:
         content: Si, Firma con IO gestisce la doppia firma. E’ infatti  possibile richiedere all’utente la firma di un documento PDF già firmato con firma PAdES (e.g., un documento con all’interno già la firma del soggetto con potere di firma dell’ente).
       - header: L’ente deve inviare all’utente un messaggio per ogni documento da firmare?
         content: No. Possono essere firmati più documenti con una sola notifica. L’utente visualizza l’anteprima del primo documento, subito dopo una schermata di riepilogo con la lista delle firme da apporre e successivamente gli ulteriori documenti da firmare.
-  - type: Footer
-    currentLangCode: it
-    companyLink:
-      href: 'https://www.pagopa.it/'
-      ariaLabel: 'Link: vai al sito di PagoPA S.p.A.'
-    productsJsonUrl: 'https://dev.selfcare.pagopa.it/assets/products.json'
-    legalInfo: '<div><strong>PagoPA S.p.A.</strong> — società per azioni con socio unico - capitale sociale di euro 1,000,000 interamente versato - sede legale in Roma, Piazza Colonna 370, <br /> CAP 00187 - n. di iscrizione a Registro Imprese di Roma, CF e P.IVA 15376371009</div>'
-    languages:
-      it:
-        it: 'Italiano'
-    links:
-      aboutUs:
-        title: ''
-        links:
-          - label: 'Chi siamo'
-            href: 'https://www.pagopa.it/it/societa/chi-siamo'
-            ariaLabel: 'Vai al link: Chi siamo'
-            linkType: 'external'
-          - label: 'PNRR'
-            href: 'https://www.pagopa.it/it/opportunita/pnrr/progetti/'
-            ariaLabel: 'Vai al link: PNRR'
-            linkType: 'external'
-          - label: 'Media'
-            href: 'https://www.pagopa.it/it/media'
-            ariaLabel: 'Vai al link: Media'
-            linkType: 'external'
-          - label: 'Lavora con noi'
-            href: 'https://www.pagopa.it/it/lavora-con-noi'
-            ariaLabel: 'Vai al link: Lavora con noi'
-            linkType: 'external'
-      resources:
-        title: 'Risorse'
-        links:
-          - label: 'Informativa Privacy'
-            href: 'https://www.pagopa.it/it/privacy-policy/'
-            ariaLabel: 'Vai al link: Informativa Privacy'
-            linkType: 'external'
-          - label: 'Certificazioni'
-            href: 'https://www.pagopa.it/static/e1979a4c34b4756ec4e8ff9fe115b92a/Certificazine_ISO27001.pdf'
-            ariaLabel: 'Vai al link: Certificazioni'
-            linkType: 'external'
-          - label: 'Sicurezza delle informazioni'
-            href: 'https://www.pagopa.it/static/781646994f1f8ddad2d95af3aaedac3d/Sicurezza-delle-informazioni_PagoPA-S.p.A..pdf'
-            ariaLabel: 'Vai al link: Sicurezza delle informazioni'
-            linkType: 'external'
-          - label: 'Diritto alla protezione dei dati personali'
-            href: 'https://privacyportal-de.onetrust.com/webform/77f17844-04c3-4969-a11d-462ee77acbe1/9ab6533d-be4a-482e-929a-0d8d2ab29df8'
-            ariaLabel: 'Vai al link: Diritto alla protezione dei dati personali'
-            linkType: 'external'
-          - label: 'Termini e Condizioni'
-            href: 'https://www.pagopa.it/it/termini-e-condizioni-di-utilizzo-del-sito'
-            ariaLabel: 'Vai al link: Termini e Condizioni'
-            linkType: 'internal'
-          - label: 'Società trasparente'
-            href: 'https://pagopa.portaleamministrazionetrasparente.it/'
-            ariaLabel: 'Vai al link: Società trasparente'
-            linkType: 'external'
-          - label: 'Responsible Disclosure Policy'
-            href: 'https://www.pagopa.it/it/responsible-disclosure-policy/'
-            ariaLabel: 'Vai al link: Responsible Disclosure Policy'
-            linkType: 'external'
-          - label: 'Modello 321'
-            href: 'https://pagopa.portaleamministrazionetrasparente.it/pagina746_altri-contenuti.html'
-            ariaLabel: 'Vai al link: Modello 231'
-            linkType: 'external'
-      followUs:
-        title: 'Seguici su'
-        socialLinks:
-          - icon: 'linkedin'
-            title: 'LinkedIn'
-            href: 'https://www.linkedin.com/company/pagopa/'
-            ariaLabel: 'Link: vai al sito LinkedIn di PagoPA S.p.A.'
-          - title: 'Twitter'
-            icon: 'twitter'
-            href: 'https://twitter.com/pagopa'
-            ariaLabel: 'Link: vai al sito Twitter di PagoPA S.p.A.'
-          - icon: 'instagram'
-            title: 'Instagram'
-            href: 'https://www.instagram.com/pagopa/'
-            ariaLabel: 'Link: vai al sito Instagram di PagoPA S.p.A.'
-        links:
-          - label: 'Accessibilità'
-            href: '#accessibilità'
-            ariaLabel: 'Vai al link: Accessibilità'
-            linkType: 'internal'

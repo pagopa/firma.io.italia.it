@@ -88,7 +88,7 @@ export const SEO = ({ meta }: SEOProps) => {
 					{`{
             "@context": "https://schema.org",
             "@type": "Organization",
-            "url": "https://www.pagopa.firmaconio.it/it/",
+            "url": "https://www.pagopa.it/it/",
             "logo": "https://www.pagopa.it/pagopa.svg"
           }`}
 				</script>
@@ -137,7 +137,7 @@ export const SEO = ({ meta }: SEOProps) => {
               "latitude": 41.9095736,
               "longitude": 12.4914426
             },
-            "url": "https://www.pagopa.firmaconio.it"
+            "url": "https://www.pagopa.it/it/"
           }`}
 				</script>
 			</Helmet>

@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import { BlocksRenderer } from '../../components/BlocksRenderer';
 import { SEO } from '../../components/SEO';
+import Layout from '../../Layout';
 
 const MdxPage = ({
 	data: {
@@ -11,10 +12,9 @@ const MdxPage = ({
 	data: Queries.PageYamlQuery;
 }) => {
 	return (
-		<>
-			<SEO meta={seo} />
+		<Layout seo={seo}>
 			<BlocksRenderer blocks={components} />
-		</>
+		</Layout>
 	);
 };
 
