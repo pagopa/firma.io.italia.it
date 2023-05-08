@@ -1,4 +1,4 @@
-import Pagopa from '@pagopa/pagopa-editorial-components/';
+import { BannerLink, Header, PhotoVideo } from '@pagopa/pagopa-editorial-components/';
 import { graphql } from 'gatsby';
 import React from 'react';
 import { Editorial } from './Editorial';
@@ -14,15 +14,15 @@ const componentsMap: {
 	[key: string]: (props: any) => JSX.Element;
 } = {
 	Accordion,
-	BannerLink: Pagopa.BannerLink,
+	BannerLink,
 	Editorial,
 	Feature,
 	Form,
 	Footer,
-	Header: Pagopa.Header,
+	Header,
 	Hero,
 	HowTo,
-	PhotoVideo: Pagopa.PhotoVideo,
+	PhotoVideo,
 };
 
 const Block = ({

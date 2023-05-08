@@ -105,7 +105,7 @@ components:
         description: L’utente riceve tramite messaggio su IO i documenti firmati, che possono essere condivisi o scaricati sul proprio dispositivo.
     rowMaxSteps: 4
     stepsAlign: center
-  - src: https://www.youtube.com/embed/YxpWC1Vq4to
+  - src:  https://www.youtube.com/watch?v=a__7m1BcL-g
     type: PhotoVideo
     slug: 'home-photoVideo-firma'
     full: true,

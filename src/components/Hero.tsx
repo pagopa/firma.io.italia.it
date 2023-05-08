@@ -1,4 +1,4 @@
-import Pagopa from '@pagopa/pagopa-editorial-components/';
+import { Hero as ECHero } from '@pagopa/pagopa-editorial-components/';
 import { HeroProps } from '@pagopa/pagopa-editorial-components/dist/components/Hero';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
@@ -11,7 +11,7 @@ export const Hero = ({
 	...props
 }: HeroProps) => {
 	return (
-		<Pagopa.Hero
+		<ECHero
 			{...props}
 			subtitle={
 				typeof subtitle === 'string' ? <Html data={subtitle} /> : subtitle

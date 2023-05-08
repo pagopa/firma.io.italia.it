@@ -1,4 +1,4 @@
-import Pagopa from '@pagopa/pagopa-editorial-components/';
+import { Footer as ECFooter } from '@pagopa/pagopa-editorial-components/';
 import {
 	CompanyLinkType,
 	PreLoginFooterLinksType,
@@ -18,7 +18,7 @@ type FooterProps = LangSwitchProps & {
 };
 
 export const Footer = ({ legalInfo, ...props }: FooterProps) => (
-	<Pagopa.Footer
+	<ECFooter
 		{...props}
 		onLanguageChanged={() => null}
 		legalInfo={
