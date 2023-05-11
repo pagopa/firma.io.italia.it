@@ -2,7 +2,7 @@ preHeader:
   leftCtas:
     theme: 'light'
     ctaButtons:
-      - text: 'Pagopa S.p.A.'
+      - text: 'PagoPA S.p.A.'
         variant: 'naked'
         color: 'inherit'
         target: 'external'
@@ -19,7 +19,7 @@ preHeader:
         startIcon: 'assistenza'
 header:
   product:
-    name: Firma Con IO
+    name: Firma con IO
     href: '/'
   theme: light
   slug: 'home-header'
@@ -28,7 +28,6 @@ header:
       label: Home
       href: '/'
       target: _self
-      active: true
     - theme: light
       label: FAQ
       href: 'faq'
@@ -58,10 +57,6 @@ footer:
           href: 'https://www.pagopa.it/it/societa/chi-siamo'
           ariaLabel: 'Vai al link: Chi siamo'
           linkType: 'external'
-        - label: 'PNRR'
-          href: 'https://www.pagopa.it/it/opportunita/pnrr/progetti/'
-          ariaLabel: 'Vai al link: PNRR'
-          linkType: 'external'
         - label: 'Media'
           href: 'https://www.pagopa.it/it/media'
           ariaLabel: 'Vai al link: Media'
@@ -74,8 +69,11 @@ footer:
       title: 'Risorse'
       links:
         - label: 'Informativa Privacy'
-          href: 'https://www.pagopa.it/it/privacy-policy/'
+          href: '/privacy-policy/'
           ariaLabel: 'Vai al link: Informativa Privacy'
+        - label: 'Informativa Privacy Assistenza'
+          href: 'https://www.pagopa.it/it/privacy-policy-assistenza'
+          ariaLabel: 'Vai al link: Informativa Privacy Assistenza'
           linkType: 'external'
         - label: 'Certificazioni'
           href: 'https://www.pagopa.it/static/e1979a4c34b4756ec4e8ff9fe115b92a/Certificazine_ISO27001.pdf'
@@ -101,7 +99,7 @@ footer:
           href: 'https://www.pagopa.it/it/responsible-disclosure-policy/'
           ariaLabel: 'Vai al link: Responsible Disclosure Policy'
           linkType: 'external'
-        - label: 'Modello 321'
+        - label: 'Modello 231'
           href: 'https://pagopa.portaleamministrazionetrasparente.it/pagina746_altri-contenuti.html'
           ariaLabel: 'Vai al link: Modello 231'
           linkType: 'external'

@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, Script, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Header as ECHeader } from '@pagopa/pagopa-editorial-components/';
 import { Footer } from './Footer';
@@ -80,7 +80,6 @@ export const Layout = ({
 						variant
 					}
 					menu {
-						active
 						label
 						href
 						theme
@@ -131,6 +130,7 @@ export const Layout = ({
 	return (
 		<>
 			{seo && <SEO meta={seo} />}
+			<Script src="https://www.recaptcha.net/recaptcha/api.js" async defer/>
 			{preHeader && <PreHeader {...preHeader} />}
 			{preHeader && <Divider />}
 			{header && <ECHeader {...header} menu={menu} />}

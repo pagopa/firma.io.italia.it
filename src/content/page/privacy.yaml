@@ -1,0 +1,24 @@
+route: ''
+url: /privacy-policy
+seo:
+  metaImage:
+    localFile:
+      publicURL: ''
+  metaTitle: 'PagoPA Firma'
+  metaDescription: ''
+  metaSocial:
+    - description: ''
+      title: ''
+      socialNetwork: ''
+    - description: ''
+      title: ''
+      socialNetwork: ''
+components:
+  - type: Hero
+    theme: dark
+    slug: 'privacy-policy'
+    title: Privacy Policy
+    background: ../../assets/hero-solid-dark.jpg
+    size: small
+  - type: Privacy
+    content: test
