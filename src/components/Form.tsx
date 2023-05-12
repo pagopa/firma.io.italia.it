@@ -15,7 +15,7 @@ import solidLightBackground from '../../static/hero-solid-light.jpg';
 export const Form = ({
 	title,
 	notice,
-	subtitle
+	subtitle,
 }: {
 	title: string;
 	subtitle: string;
@@ -33,18 +33,10 @@ export const Form = ({
 			<Grid container justifyContent="center">
 				<Grid item md={8}>
 					<form>
-						<Typography
-							variant="h3"
-							pt={8}
-              mb={1}
-							textAlign="center"
-						>
+						<Typography variant="h3" pt={8} mb={1} textAlign="center">
 							{title}
 						</Typography>
-						<Typography
-							paragraph
-							textAlign="center"
-						>
+						<Typography paragraph textAlign="center">
 							{subtitle}
 						</Typography>
 						<Stack spacing={2} mb={4}>
@@ -75,12 +67,12 @@ export const Form = ({
 						</Stack>
 						<Grid container mb={1}>
 							<Grid item xs={11}>
-								<Typography variant="caption" >
-									{notice.newsletter}
+								<Typography variant="caption">
+									<label htmlFor="newsletter">{notice.newsletter}</label>
 								</Typography>
 							</Grid>
 							<Grid item xs={1}>
-								<Checkbox />
+								<Checkbox id="newsletter" />
 							</Grid>
 						</Grid>
 						<Divider />
@@ -90,11 +82,7 @@ export const Form = ({
 									Invia Richiesta
 								</Button>
 							</Stack>
-							<Typography
-								variant="caption-semibold"
-
-								textAlign="center"
-							>
+							<Typography variant="caption-semibold" textAlign="center">
 								{notice.privacy}
 							</Typography>
 						</Stack>

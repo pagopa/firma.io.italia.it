@@ -5,7 +5,7 @@ import { Html } from './Html';
 
 const Accordion = ({ accordionItems, ...props }: AccordionProps) => {
   const enhancedAccordionItems = accordionItems
-    .map(({ content, header  }) => ({ header, content: typeof content === 'string' ? <Html data={content} /> : content})) 
+    .map(({ content, header  }) => ({ header, content: typeof content === 'string' ? <Html data={content} /> : content}))
 	return (
 		<ECAccordion
 			{...props}

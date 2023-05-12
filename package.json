@@ -1,46 +1,46 @@
 {
-  "name": "firma-con-io",
-  "version": "1.0.0",
-  "private": true,
-  "description": "firma-con-io",
-  "author": "Michele Moio",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mdx-js/react": "^2.3.0",
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.11.16",
-    "@pagopa/pagopa-editorial-components": "^0.0.10",
-    "@types/react-helmet": "^6.1.6",
-    "gatsby": "^5.8.1",
-    "gatsby-plugin-image": "^3.9.0",
-    "gatsby-plugin-react-helmet": "^6.8.0",
-    "gatsby-plugin-react-i18next": "^3.0.1",
-    "gatsby-plugin-sharp": "^5.9.0",
-    "gatsby-source-filesystem": "^5.9.0",
-    "gatsby-transformer-sharp": "^5.9.0",
-    "gatsby-transformer-yaml": "^5.8.0",
-    "i18next": "^22.4.14",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-i18next": "^12.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.15.8",
-    "@types/react": "^18.0.29",
-    "@types/react-dom": "^18.0.11",
-    "typescript": "^5.0.2"
-  }
+	"name": "firma-con-io",
+	"version": "1.0.0",
+	"private": true,
+	"description": "firma-con-io",
+	"author": "Michele Moio",
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"develop": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.10.6",
+		"@emotion/styled": "^11.10.6",
+		"@mdx-js/react": "^2.3.0",
+		"@mui/icons-material": "^5.11.16",
+		"@mui/material": "^5.11.16",
+		"@pagopa/pagopa-editorial-components": "^0.0.11",
+		"@types/react-helmet": "^6.1.6",
+		"gatsby": "^5.8.1",
+		"gatsby-plugin-image": "^3.9.0",
+		"gatsby-plugin-react-helmet": "^6.8.0",
+		"gatsby-plugin-react-i18next": "^3.0.1",
+		"gatsby-plugin-sharp": "^5.9.0",
+		"gatsby-source-filesystem": "^5.9.0",
+		"gatsby-transformer-sharp": "^5.9.0",
+		"gatsby-transformer-yaml": "^5.8.0",
+		"i18next": "^22.4.14",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-helmet": "^6.1.0",
+		"react-i18next": "^12.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.15.8",
+		"@types/react": "^18.0.29",
+		"@types/react-dom": "^18.0.11",
+		"typescript": "^5.0.2"
+	}
 }
