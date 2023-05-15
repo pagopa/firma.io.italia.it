@@ -15,6 +15,9 @@ const config: GatsbyConfig = {
 		metaRobots: ``,
 		metaViewport: `width=device-width, initial-scale=1, shrink-to-fit=no`,
 	},
+	flags: {
+		DEV_SSR: false, // enable ssr in development
+	},
 	graphqlTypegen: true,
 	plugins: [
 		`gatsby-plugin-image`,

@@ -1,4 +1,3 @@
-import { useI18next } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -31,12 +30,11 @@ export const SEO = ({ meta }: SEOProps) => {
 			: '',
 	};
 
-	const { language } = useI18next();
 	return (
 		<>
 			<Helmet
 				htmlAttributes={{
-					lang: language,
+					lang: 'it',
 				}}
 				title={seo.title}
 				meta={[
