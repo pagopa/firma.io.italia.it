@@ -5,6 +5,9 @@ import { Footer } from './Footer';
 import { useLocation } from '@reach/router';
 import { MenuDropdownProp } from '@pagopa/pagopa-editorial-components/dist/components/Header/components/MenuDropdown';
 import { SEO, SEOProps } from './SEO';
+import { PreHeader } from './PreHeader';
+import { useTheme } from '@mui/material/styles';
+import { Divider } from '@mui/material';
 
 export const Layout = ({
 	children,
@@ -14,7 +17,7 @@ export const Layout = ({
 	seo?: SEOProps['meta'];
 }) => {
 	const {
-		layoutYaml: { footer, header },
+		layoutYaml: { footer, header, preHeader },
 	} = useStaticQuery(graphql`
 		query Layout {
 			layoutYaml {
@@ -90,12 +93,35 @@ export const Layout = ({
 					slug
 					theme
 				}
-				id
+				preHeader {
+					leftCtas {
+						theme
+						ctaButtons {
+							color
+							href
+							target
+							text
+							variant
+						}
+					}
+					rightCtas {
+						theme
+						ctaButtons {
+							color
+							href
+							startIcon
+							target
+							text
+							variant
+						}
+					}
+				}
 			}
 		}
 	`);
 
 	const { pathname } = useLocation();
+	const { palette } = useTheme();
 	const menu = header.menu.map((item: MenuDropdownProp) => {
 		const isCurrent =
 			pathname === item.href || pathname.split('/').includes(item.href);
@@ -105,6 +131,8 @@ export const Layout = ({
 	return (
 		<>
 			{seo && <SEO meta={seo} />}
+			{preHeader && <PreHeader {...preHeader} />}
+			{preHeader && <Divider />}
 			{header && <ECHeader {...header} menu={menu} />}
 			<main>{children}</main>
 			{footer && <Footer {...footer} />}

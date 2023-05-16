@@ -1,3 +1,22 @@
+preHeader:
+  leftCtas:
+    theme: 'light'
+    ctaButtons:
+      - text: 'Pagopa S.p.A.'
+        variant: 'naked'
+        color: 'inherit'
+        target: 'external'
+        href: 'https://www.pagopa.it/it/'
+        disableRipple: true
+  rightCtas:
+    theme: 'light'
+    ctaButtons:
+      - text: 'Assistenza'
+        variant: 'naked'
+        color: 'inherit'
+        target: 'external'
+        href: 'mailto:enti-firmaconio@assistenza.pagopa.it'
+        startIcon: 'assistenza'
 header:
   product:
     name: Firma Con IO

@@ -1,3 +1,4 @@
+import Typography from '@mui/material/Typography/Typography';
 import { Hero as ECHero } from '@pagopa/pagopa-editorial-components/';
 import { HeroProps } from '@pagopa/pagopa-editorial-components/dist/components/Hero';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
@@ -14,7 +15,9 @@ export const Hero = ({
 		<ECHero
 			{...props}
 			subtitle={
-				typeof subtitle === 'string' ? <Html data={subtitle} /> : subtitle
+				<Typography variant="body1" color="primary.contrastText">
+					<Html data={subtitle} />
+				</Typography>
 			}
 			background={
 				<div
