@@ -15,7 +15,7 @@ preHeader:
         variant: 'naked'
         color: 'inherit'
         target: 'external'
-        href: 'https://www.pagopa.gov.it/it/assistenza/'
+        href: 'mailto:enti-firmaconio@assistenza.pagopa.it'
         startIcon: 'assistenza'
 header:
   product:
