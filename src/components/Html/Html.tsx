@@ -1,15 +1,8 @@
-import React, { MutableRefObject } from 'react';
+import React, { useRef } from 'react';
 import './Html.css';
 
-export const Html = ({
-	data,
-	forwardRef,
-}: {
-	data: string;
-	forwardRef?: MutableRefObject<any>;
-}) => (
+export const Html = ({ data }: { data: TrustedHTML }) => (
 	<span
-		ref={forwardRef}
 		dangerouslySetInnerHTML={{
 			__html: data,
 		}}

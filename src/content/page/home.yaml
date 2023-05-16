@@ -18,7 +18,7 @@ components:
     type: Hero
     slug: 'home-hero-firma'
     title: La soluzione per firmare i documenti e i contratti della PA direttamente in app
-    subtitle: <b>Firma con IO</b> è la funzionalità integrata nell’app IO che consente di firmare digitalmente i documenti della Pubblica Amministrazione in modo facile, veloce e sicuro. Tutto, senza uscire dall’app.
+    subtitle: '<b>Firma con IO</b> è la funzionalità integrata nell’app IO che consente di firmare digitalmente i documenti della Pubblica Amministrazione in modo facile, veloce e sicuro. Tutto, senza uscire dall’app.'
     background: '../../assets/hero_background.jpg'
     size: big
   - theme: light
@@ -27,7 +27,7 @@ components:
     width: wide
     eyelet: ''
     title: Una firma a valore legale, a disposizione di tutti
-    body: <p><b>Firma con IO</b> è una <b>Firma Elettronica Qualificata</b> “one shot” con il massimo valore legale, pari alla firma autografa, che consente agli <b>enti</b> di digitalizzare l’iter di raccolta firme. Ai <b>cittadini basta avere IO</b> per firmare documenti e contratti direttamente sul proprio dispositivo.</p>
+    body: '<p><b>Firma con IO</b> è una <b>Firma Elettronica Qualificata</b> “one shot” con il massimo valore legale, pari alla firma autografa, che consente agli <b>enti</b> di digitalizzare l’iter di raccolta firme. Ai <b>cittadini basta avere IO</b> per firmare documenti e contratti direttamente sul proprio dispositivo.</p>'
     ctaButtons:
       - text: Come Funziona
         href: '#come-funziona'
@@ -84,7 +84,7 @@ components:
         description: L’utente riceve tramite messaggio su IO i documenti firmati, che possono essere condivisi o scaricati sul proprio dispositivo.
     rowMaxSteps: 4
     stepsAlign: center
-  - src:  https://www.youtube.com/watch?v=a__7m1BcL-g
+  - src: https://www.youtube.com/watch?v=a__7m1BcL-g
     type: PhotoVideo
     slug: 'home-photoVideo-firma'
     full: true,

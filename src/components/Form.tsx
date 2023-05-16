@@ -41,6 +41,7 @@ export const Form = ({
 						</Typography>
 						<Stack spacing={2} mb={4}>
 							<TextField
+								id="user"
 								placeholder="Nome e Cognome"
 								variant="outlined"
 								size="small"
@@ -49,6 +50,7 @@ export const Form = ({
 								}}
 							/>
 							<TextField
+								id="email"
 								placeholder="Indirizzo e-mail"
 								variant="outlined"
 								size="small"
@@ -57,6 +59,7 @@ export const Form = ({
 								}}
 							/>
 							<TextField
+								id="nomeEnte"
 								placeholder="Nome ente"
 								variant="outlined"
 								size="small"
