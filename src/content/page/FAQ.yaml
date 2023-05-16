@@ -37,7 +37,7 @@ components:
     title: Per gli enti
     layout: center
     accordionItems:
-      - header: Come aderire a Firma con IO
+      - header: Come aderire a Firma con IO?
         content: Per poter usufruire di questa funzionalità, l’ente deve per prima cosa completare il processo di onboarding nell’<a href='https://selfcare.pagopa.it/auth/login?onSuccess=%2Fonboarding%2Fprod-io-sign'>Area Riservata</a> di PagoPA.
       - header: Devo aver già attivato altri servizi su app IO per aderire a Firma?
         content: Non è necessario. Si può scegliere di aderire solo a questa funzionalità
