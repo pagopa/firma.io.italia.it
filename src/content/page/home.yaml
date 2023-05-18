@@ -97,7 +97,8 @@ components:
     type: Form
     slug: 'aderisci'
     privacy: Inviando la richiesta i tuoi dati saranno trattati come descritto nell'<a href='/privacy-policy'>informativa sul trattamento dei dati personali</a>
-  - decoration:
+  - type: BannerLink
+    decoration:
       src: ./aderisci.svg
       alt: aderisci
     slug: 'bannerLink-firma'
@@ -109,7 +110,7 @@ components:
         href: https://selfcare.pagopa.it/onboarding/prod-io-sign
         target: _blank
         variant: contained
-  - theme: dark
+  - theme: light
     type: BannerLink
     slug: 'home-bannerLink-faq'
     title: Dubbi o domande?

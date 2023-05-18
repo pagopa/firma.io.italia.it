@@ -2,9 +2,3 @@ a {
 	color: #2085e9;
 	background-size: contain;
 }
-
-a:hover {
-  box-shadow: -2px 0px 0px 2px #bfdcf8, 2px 0px 0px 2px #bfdcf8;
-	background-color: #bfdcf8;
-}
-
