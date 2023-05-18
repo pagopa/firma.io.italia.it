@@ -1,5 +1,5 @@
 route: ''
-url: /privacy-policy
+url: /informativa-privacy
 seo:
   metaImage:
     localFile:
@@ -17,7 +17,7 @@ components:
   - type: Hero
     theme: dark
     slug: 'privacy-policy'
-    title: Privacy Policy
+    title: Informativa sul trattamento dei dati personali
     background: ../../assets/hero-solid-dark.jpg
     size: small
   - type: Privacy

@@ -96,7 +96,6 @@ export const Form = ({
       })
     } finally {
       captchaRef.current.reset();
-      // setFormInfo(initialFormInfo);
     }
   }
 
@@ -202,7 +201,6 @@ export const Form = ({
 							</Stack>
               {
                 alert.show && (
-
                   <Alert severity={alert.severity} variant="outlined">{alert.text}</Alert>
                 )
               }

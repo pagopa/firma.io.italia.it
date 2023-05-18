@@ -69,7 +69,7 @@ footer:
       title: 'Risorse'
       links:
         - label: 'Informativa Privacy'
-          href: '/privacy-policy/'
+          href: '/informativa-privacy'
           ariaLabel: 'Vai al link: Informativa Privacy'
         - label: 'Informativa Privacy Assistenza'
           href: 'https://www.pagopa.it/it/privacy-policy-assistenza'
