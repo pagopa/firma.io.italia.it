@@ -84,7 +84,7 @@ components:
         description: L’utente riceve tramite messaggio su IO i documenti firmati, che possono essere condivisi o scaricati sul proprio dispositivo.
     rowMaxSteps: 4
     stepsAlign: center
-  - src: https://deploy-preview-49--resonant-platypus-13009d.netlify.app/static/media/720.2a608ca3.mp4
+  - src: media/720.2a608ca3.mp4
     type: PhotoVideo
     slug: 'home-photoVideo-firma'
     full: true,
