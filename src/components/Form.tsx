@@ -9,7 +9,7 @@ import {
   Alert,
   AlertColor
 } from '@mui/material';
-import { Container } from '@mui/system';  
+import { Container } from '@mui/system';
 import React, { useRef, useState } from 'react';
 import solidLightBackground from '../../static/hero-solid-light.jpg';
 import { Html } from './Html';
@@ -57,7 +57,7 @@ export const Form = ({
   const [ formInfo, setFormInfo ] = useState<FormInfo>(initialFormInfo);
 
   const onChange = (e) => {
-    const { name, value } = e.target; 
+    const { name, value } = e.target;
     setFormInfo({ ...formInfo, [name]: value })
   }
 
@@ -75,6 +75,7 @@ export const Form = ({
       }
       const response = await fetch('https://news-p-weu-core-app-fn.azurewebsites.net/api/v1/newsletters/io/lists/7/recipients',
         {
+          mode: 'cors',
           method: 'POST',
           body: JSON.stringify({  recaptchaToken, groups: ["61"], ...formInfo }),
         });
