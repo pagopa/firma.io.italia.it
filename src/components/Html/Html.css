@@ -1,8 +1,8 @@
-body, p {
- font-family: 'Titillium Web', sans-serif;
-}
+body, p { font-family: 'Titillium Web', sans-serif; }
 
 a {
 	color: #2085e9;
 	background-size: contain;
 }
+
+.grecaptcha-badge { visibility: hidden; }
