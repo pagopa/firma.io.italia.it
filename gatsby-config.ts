@@ -18,7 +18,10 @@ const config: GatsbyConfig = {
 	flags: {
 		DEV_SSR: false, // enable ssr in development
 	},
-	graphqlTypegen: true,
+	graphqlTypegen: {
+		typesOutputPath: `types/gatsby-types.d.ts`,
+		generateOnBuild: false,
+	},
 	plugins: [
 		`gatsby-plugin-image`,
 		`gatsby-plugin-sharp`,
