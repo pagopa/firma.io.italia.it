@@ -24,7 +24,7 @@ export const SEO = ({ meta }: SEOProps) => {
 	const seo = {
 		title: meta?.metaTitle || siteMetadata?.metaTitle || '',
 		description: meta?.metaDescription || siteMetadata?.metaDescription || '',
-		twitter: meta?.metaSocial?.find((social) => social?.title === 'twitter'),
+		twitter: meta?.metaSocial?.find((social) => social?.socialNetwork === 'twitter'),
 		metaImage: meta?.metaImage
 			? `${process.env.API_URL}${meta?.metaImage?.localFile?.publicURL}`
 			: '',

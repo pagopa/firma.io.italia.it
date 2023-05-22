@@ -4,15 +4,12 @@ seo:
   metaImage:
     localFile:
       publicURL: ''
-  metaTitle: 'PagoPA Firma'
-  metaDescription: ''
+  metaTitle: 'Informativa Privacy - Firma con IO - Firma documenti e contratti della PA'
+  metaDescription: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
   metaSocial:
-    - description: ''
-      title: ''
-      socialNetwork: ''
-    - description: ''
-      title: ''
-      socialNetwork: ''
+    - description: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
+      title: 'Firma con IO - Firma documenti e contratti della PA'
+      socialNetwork: 'twitter'
 components:
   - type: Hero
     theme: dark
