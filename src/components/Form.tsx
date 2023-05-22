@@ -17,12 +17,9 @@ import RECAPTCHA from "react-google-recaptcha"
 
 interface FormInfo {
   email: string
-  /** nome */
-  campo1: string
-  /** cognome */
-  campo2: string
-  /** nome ente */
-  campo3: string
+  name: string
+  surname: string
+  organization: string
 };
 
 interface IAlert {
@@ -39,9 +36,9 @@ const initialAlert: IAlert = {
 
 const initialFormInfo: FormInfo = {
   email: '',
-  campo1: '',
-  campo2: '',
-  campo3 : '' };
+  name: '',
+  surname: '',
+  organization : '' };
 
 export const Form = ({
 	title,
@@ -128,9 +125,9 @@ export const Form = ({
               <Stack direction='row' spacing={2}>
                 <TextField
                   required
-                  id='campo1'
-                  name='campo1'
-                  value={formInfo.campo1}
+                  id='name'
+                  name='name'
+                  value={formInfo.name}
                   onChange={onChange}
                   placeholder="Nome"
                   variant="outlined"
@@ -142,10 +139,10 @@ export const Form = ({
                 />
                 <TextField
                   required
-                  id='campo2'
-                  name='campo2'
+                  id='surname'
+                  name='surname'
                   placeholder="Cognome"
-                  value={formInfo.campo2}
+                  value={formInfo.surname}
                   onChange={onChange}
                   variant="outlined"
                   size="small"
@@ -172,8 +169,8 @@ export const Form = ({
 							<TextField
 								id="nomeEnte"
                 required
-                value={formInfo.campo3}
-                name='campo3'
+                value={formInfo.organization}
+                name='organization'
                 onChange={onChange}
 								placeholder="Nome ente"
 								variant="outlined"
