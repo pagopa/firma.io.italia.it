@@ -63,6 +63,18 @@ export const SEO = ({ meta }: SEOProps) => {
 						content: seo.metaImage,
 					},
 					{
+						property: `og:image:url`,
+						content: seo.metaImage,
+					},
+					{
+						property: `og:image:secur_url`,
+						content: seo.metaImage,
+					},
+					{
+						property: `og:image:type`,
+						content: 'image/png',
+					},
+					{
 						property: `og:type`,
 						content: `website`,
 					},
