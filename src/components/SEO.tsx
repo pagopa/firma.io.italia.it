@@ -67,6 +67,10 @@ export const SEO = ({ meta }: SEOProps) => {
 						content: `website`,
 					},
 					{
+						property: `og:url`,
+						content: `https://deploy-preview-21--sparkly-moonbeam-1e00a0.netlify.app`,
+					},
+					{
 						name: `twitter:card`,
 						content: `summary`,
 					},
