@@ -3,7 +3,7 @@ url: /
 seo:
   metaImage:
     localFile:
-      publicURL: 'https://deploy-preview-21--sparkly-moonbeam-1e00a0.netlify.app/social-card.png'
+      publicURL: '/social-card.png'
   metaTitle: 'Firma con IO - Firma documenti e contratti della PA'
   metaDescription: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
   metaSocial:

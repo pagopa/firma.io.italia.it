@@ -1,9 +1,12 @@
+import * as dotenv from 'dotenv';
 import type { GatsbyConfig } from 'gatsby';
+
+dotenv.config();
 
 const config: GatsbyConfig = {
 	siteMetadata: {
 		metaTitle: `Firma con IO`,
-		siteUrl: `https://firma.io.italia.it`,
+		siteUrl: `${process.env.SITE_URL}`,
 		metaDescription: `PagoPA S.p.A. è una società pubblica ad alto livello specialistico, che ha la mission di diffondere i servizi pubblici digitali attraverso lo sviluppo di progetti innovativi e la gestione di infrastrutture tecnologiche strategiche per accompagnare la modernizzazione della Pubblica Amministrazione e del Paese.`,
 		metaSocial: {
 			socialNetwork: `twitter`,

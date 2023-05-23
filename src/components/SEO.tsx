@@ -26,7 +26,7 @@ export const SEO = ({ meta }: SEOProps) => {
 		description: meta?.metaDescription || siteMetadata?.metaDescription || '',
 		twitter: meta?.metaSocial?.find((social) => social?.socialNetwork === 'twitter'),
 		metaImage: meta?.metaImage
-			? `${meta?.metaImage?.localFile?.publicURL}`
+			? `${process.env.SITE_URL}${meta?.metaImage?.localFile?.publicURL}`
 			: '',
 	};
 
@@ -80,7 +80,7 @@ export const SEO = ({ meta }: SEOProps) => {
 					},
 					{
 						property: `og:url`,
-						content: `https://deploy-preview-21--sparkly-moonbeam-1e00a0.netlify.app`,
+						content: `${process.env}`,
 					},
 					{
 						name: `twitter:card`,
