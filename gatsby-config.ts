@@ -3,13 +3,13 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
 	siteMetadata: {
 		metaTitle: `Firma con IO`,
-		siteUrl: `https://www.pagopa.firma.it`, // TODO change to actual url
+		siteUrl: `https://firma.io.italia.it`,
 		metaDescription: `PagoPA S.p.A. è una società pubblica ad alto livello specialistico, che ha la mission di diffondere i servizi pubblici digitali attraverso lo sviluppo di progetti innovativi e la gestione di infrastrutture tecnologiche strategiche per accompagnare la modernizzazione della Pubblica Amministrazione e del Paese.`,
 		metaSocial: {
 			socialNetwork: `twitter`,
 			title: `https://www.twitterdomain.tld`,
-			description: `author`,
-			image: `/site-icon.png`,
+			description: `pagoPa S.p.A.`,
+			image: `/assets/social-card.png`,
 		},
 		keywords: ``,
 		metaRobots: ``,
@@ -19,7 +19,7 @@ const config: GatsbyConfig = {
 		DEV_SSR: false, // enable ssr in development
 	},
 	graphqlTypegen: {
-		typesOutputPath: `types/gatsby-types.d.ts`,
+		typesOutputPath: `/types/gatsby-types.d.ts`,
 		generateOnBuild: false,
 	},
 	plugins: [

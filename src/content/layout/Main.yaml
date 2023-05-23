@@ -30,7 +30,7 @@ header:
       target: _self
     - theme: light
       label: FAQ
-      href: 'faq'
+      href: '/faq'
       target: _self
   ctaButtons:
     - text: Area Riservata Enti

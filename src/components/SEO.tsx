@@ -26,7 +26,7 @@ export const SEO = ({ meta }: SEOProps) => {
 		description: meta?.metaDescription || siteMetadata?.metaDescription || '',
 		twitter: meta?.metaSocial?.find((social) => social?.socialNetwork === 'twitter'),
 		metaImage: meta?.metaImage
-			? `${process.env.API_URL}${meta?.metaImage?.localFile?.publicURL}`
+			? `${meta?.metaImage?.localFile?.publicURL}`
 			: '',
 	};
 
@@ -60,7 +60,7 @@ export const SEO = ({ meta }: SEOProps) => {
 					},
 					{
 						property: `og:image`,
-						content: `${seo.metaImage}`,
+						content: seo.metaImage,
 					},
 					{
 						property: `og:type`,
@@ -71,12 +71,24 @@ export const SEO = ({ meta }: SEOProps) => {
 						content: `summary`,
 					},
 					{
+						name: `twitter:site`,
+						content: `@pagopa`,
+					},
+					{
+						name: `twitter:creator`,
+						content: `PagoPa S.p.A.`,
+					},
+					{
 						name: `twitter:title`,
 						content: seo?.twitter?.title || '',
 					},
 					{
 						name: `twitter:description`,
 						content: seo?.twitter?.description || '',
+					},
+					{
+						name: `twitter:image`,
+						content: seo.metaImage,
 					},
 				]}
 			/>
