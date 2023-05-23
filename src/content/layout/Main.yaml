@@ -116,7 +116,7 @@ footer:
           ariaLabel: 'Link: vai al sito Twitter di PagoPA S.p.A.'
         - icon: 'instagram'
           title: 'Instagram'
-          href: 'https://www.instagram.com/pagopa/'
+          href: 'https://www.instagram.com/pagopaspa'
           ariaLabel: 'Link: vai al sito Instagram di PagoPA S.p.A.'
       links:
         - label: 'Accessibilità'

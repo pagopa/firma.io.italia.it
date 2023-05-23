@@ -3,6 +3,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
+const SITE_URL = process.env.SITE_URL || 'https://firma.io.italia.it'
+
 export type SEOProps = {
 	meta?: null | {
 		readonly metaTitle: string | null;
@@ -26,7 +28,7 @@ export const SEO = ({ meta }: SEOProps) => {
 		description: meta?.metaDescription || siteMetadata?.metaDescription || '',
 		twitter: meta?.metaSocial?.find((social) => social?.socialNetwork === 'twitter'),
 		metaImage: meta?.metaImage
-			? `${process.env.SITE_URL}${meta?.metaImage?.localFile?.publicURL}`
+			? `${SITE_URL}${meta?.metaImage?.localFile?.publicURL}`
 			: '',
 	};
 
@@ -80,7 +82,7 @@ export const SEO = ({ meta }: SEOProps) => {
 					},
 					{
 						property: `og:url`,
-						content: `${process.env}`,
+						content: SITE_URL,
 					},
 					{
 						name: `twitter:card`,
