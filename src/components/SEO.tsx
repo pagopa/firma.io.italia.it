@@ -3,6 +3,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
+const SITE_URL = process.env.SITE_URL || 'https://firma.io.italia.it'
+
 export type SEOProps = {
 	meta?: null | {
 		readonly metaTitle: string | null;
@@ -24,9 +26,9 @@ export const SEO = ({ meta }: SEOProps) => {
 	const seo = {
 		title: meta?.metaTitle || siteMetadata?.metaTitle || '',
 		description: meta?.metaDescription || siteMetadata?.metaDescription || '',
-		twitter: meta?.metaSocial?.find((social) => social?.title === 'twitter'),
+		twitter: meta?.metaSocial?.find((social) => social?.socialNetwork === 'twitter'),
 		metaImage: meta?.metaImage
-			? `${process.env.API_URL}${meta?.metaImage?.localFile?.publicURL}`
+			? `${SITE_URL}${meta?.metaImage?.localFile?.publicURL}`
 			: '',
 	};
 
@@ -60,15 +62,39 @@ export const SEO = ({ meta }: SEOProps) => {
 					},
 					{
 						property: `og:image`,
-						content: `${seo.metaImage}`,
+						content: seo.metaImage,
+					},
+					{
+						property: `og:image:url`,
+						content: seo.metaImage,
+					},
+					{
+						property: `og:image:secur_url`,
+						content: seo.metaImage,
+					},
+					{
+						property: `og:image:type`,
+						content: 'image/png',
 					},
 					{
 						property: `og:type`,
 						content: `website`,
 					},
 					{
+						property: `og:url`,
+						content: SITE_URL,
+					},
+					{
 						name: `twitter:card`,
-						content: `summary`,
+						content: `summary_large_image`,
+					},
+					{
+						name: `twitter:site`,
+						content: `@pagopa`,
+					},
+					{
+						name: `twitter:creator`,
+						content: `PagoPa S.p.A.`,
 					},
 					{
 						name: `twitter:title`,
@@ -77,6 +103,10 @@ export const SEO = ({ meta }: SEOProps) => {
 					{
 						name: `twitter:description`,
 						content: seo?.twitter?.description || '',
+					},
+					{
+						name: `twitter:image`,
+						content: seo.metaImage,
 					},
 				]}
 			/>

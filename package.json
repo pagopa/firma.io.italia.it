@@ -21,8 +21,9 @@
 		"@mdx-js/react": "^2.3.0",
 		"@mui/icons-material": "^5.11.16",
 		"@mui/material": "^5.11.16",
-		"@pagopa/pagopa-editorial-components": "^0.0.15",
+		"@pagopa/pagopa-editorial-components": "^1.0.0",
 		"@types/react-helmet": "^6.1.6",
+		"dotenv": "^16.0.3",
 		"gatsby": "^5.8.1",
 		"gatsby-plugin-image": "^3.9.0",
 		"gatsby-plugin-react-helmet": "^6.8.0",
@@ -34,6 +35,7 @@
 		"i18next": "^22.4.14",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-google-recaptcha": "^2.1.0",
 		"react-helmet": "^6.1.0",
 		"react-i18next": "^12.2.0"
 	},

@@ -1,4 +1,4 @@
-import { graphql, HeadProps } from 'gatsby';
+import { graphql } from 'gatsby';
 import React from 'react';
 import { BlocksRenderer } from '../../components/BlocksRenderer';
 import { Layout } from '../../components/Layout';

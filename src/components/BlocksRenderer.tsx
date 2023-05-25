@@ -1,12 +1,13 @@
 import { BannerLink, PhotoVideo } from '@pagopa/pagopa-editorial-components';
 import { graphql } from 'gatsby';
 import React from 'react';
-import Accordion from './Accordion';
 import { Editorial } from './Editorial';
 import { Feature } from './Feature';
 import { Form } from './Form';
 import { Hero } from './Hero';
 import { HowTo } from './HowTo';
+import Accordion from './Accordion';
+import Privacy from './Privacy';
 
 // This object is used to map component names to React components
 const componentsMap: {
@@ -20,6 +21,7 @@ const componentsMap: {
 	Hero,
 	HowTo,
 	PhotoVideo,
+	Privacy,
 };
 
 const Block = ({
@@ -105,14 +107,17 @@ export const query = graphql`
 		title
 		subtitle
 		full
+		autoplay
+		loop
+		useYoutubeLayout
+	}
+	fragment Privacy on PageYamlComponents {
+		content
 	}
 	fragment Form on PageYamlComponents {
 		title
 		subtitle
-		notice {
-			newsletter
-			privacy
-		}
+		privacy
 	}
 	fragment BannerLink on PageYamlComponents {
 		decoration {
@@ -149,6 +154,7 @@ export const query = graphql`
 		...Hero
 		...HowTo
 		...PhotoVideo
+		...Privacy
 	}
 	fragment Components on PageYaml {
 		components {

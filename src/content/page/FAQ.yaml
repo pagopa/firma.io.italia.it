@@ -3,13 +3,13 @@ url: /FAQ
 seo:
   metaImage:
     localFile:
-      publicURL: ''
-  metaTitle: 'faq'
-  metaDescription: 'faq page'
+      publicURL: '/social-card.png'
+  metaTitle: 'FAQ - Firma con IO - Firma documenti e contratti della PA'
+  metaDescription: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
   metaSocial:
-    - description: ''
-      title: ''
-      socialNetwork: ''
+    - description: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
+      title: 'Firma con IO - Firma documenti e contratti della PA'
+      socialNetwork: 'twitter'
 components:
   - theme: dark
     type: Hero
@@ -37,16 +37,16 @@ components:
     title: Per gli enti
     layout: center
     accordionItems:
-      - header: Come aderire a Firma con IO
+      - header: Come aderire a Firma con IO?
         content: Per poter usufruire di questa funzionalità, l’ente deve per prima cosa completare il processo di onboarding nell’<a href='https://selfcare.pagopa.it/auth/login?onSuccess=%2Fonboarding%2Fprod-io-sign'>Area Riservata</a> di PagoPA.
       - header: Devo aver già attivato altri servizi su app IO per aderire a Firma?
-        content: Non è necessario. Si può scegliere di aderire solo a questa funzionalità
+        content: Non è necessario. Si può scegliere di aderire solo a questa funzionalità.
       - header: Che tipologie di file supporta Firma con IO?
         content: 'Firma con IO supporta la firma delle seguenti tipologie di file PDF: PDF standard; PDF/A-2A; e PDF già firmati con firma PAdES.'
       - header: Nella fase in cui il documento viene inviato per la firma ma non è stato ancora firmato, dove risiede?
         content: Solamente nei server di PagoPA. Solo al momento della firma viene inviato al QTSP (Qualified Trusted Service Provider) per l’emissione del certificato one shot e per la firma del documento.
       - header: Sono tenuto alla conservazione dei documenti firmati?
-        content: Sì, l’app IO li terrà soltanto per 90 giorni, per consentire all’utente di scaricare, salvare o condividere i documenti.<br>La conservazione del documento a norma - e l’eventuale restituzione all’utente, passati i 90 giorni, resta una tua responsabilità.
+        content: Sì, l’app IO li terrà soltanto per 90 giorni, per consentire all’utente di scaricare, salvare o condividere i documenti.<br>La conservazione del documento a norma - e l’eventuale restituzione all’utente - passati i 90 giorni, resta una tua responsabilità.
       - header: Chi è tenuto a conservare il certificato di firma qualificata one shot?
         content: Il QTSP (Qualified Trusted Service Provider) è tenuto a conservare il certificato one shot per 20 anni.
       - header: Quanto dura una richiesta di firma una volta che la mando?
