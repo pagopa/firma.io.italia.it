@@ -1739,10 +1739,10 @@
     fp-ts "^2.12.3"
     io-ts "^2.2.18"
 
-"@pagopa/pagopa-editorial-components@^0.0.16":
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/@pagopa/pagopa-editorial-components/-/pagopa-editorial-components-0.0.16.tgz#21e5baa78b5a8c373c57cae0a780ca885be67361"
-  integrity sha512-TBwvacshPNMgLsDQucmJ4UbuXhfR4iA206pZiZtNuyO9QLVIuLWAJVyuHNCsEeGMKaMp4HVYZThJhLZoxSJjYw==
+"@pagopa/pagopa-editorial-components@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@pagopa/pagopa-editorial-components/-/pagopa-editorial-components-1.0.0.tgz#176ce9a055cad13390d5c5d7db9c470d8bfa0e38"
+  integrity sha512-5K1Ru7TT71GckYp6I+OaKckr0Vxa6Iw5hW3lxr/9iyavLK3T6br6Vs+VJMNzwSRSSL0Bc9MWmkegvWJhuIjlag==
   dependencies:
     "@pagopa/mui-italia" "^0.8.12"
     react-swipeable-views "^0.14.0"
