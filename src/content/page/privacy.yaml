@@ -1,0 +1,21 @@
+route: ''
+url: /informativa-privacy
+seo:
+  metaImage:
+    localFile:
+      publicURL: '/social-card.png'
+  metaTitle: 'Informativa Privacy - Firma con IO - Firma documenti e contratti della PA'
+  metaDescription: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
+  metaSocial:
+    - description: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
+      title: 'Firma con IO - Firma documenti e contratti della PA'
+      socialNetwork: 'twitter'
+components:
+  - type: Hero
+    theme: dark
+    slug: 'privacy-policy'
+    title: Informativa sul trattamento dei dati personali
+    background: ../../assets/hero-solid-dark.jpg
+    size: small
+  - type: Privacy
+    content: test

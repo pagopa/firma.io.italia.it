@@ -1,0 +1,118 @@
+route: ''
+url: /
+seo:
+  metaImage:
+    localFile:
+      publicURL: '/social-card.png'
+  metaTitle: 'Firma con IO - Firma documenti e contratti della PA'
+  metaDescription: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
+  metaSocial:
+    - description: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
+      title: 'Firma con IO - Firma documenti e contratti della PA'
+      socialNetwork: 'twitter'
+components:
+  - theme: dark
+    type: Hero
+    slug: 'home-hero-firma'
+    title: La soluzione per firmare i documenti e i contratti della PA direttamente in app
+    subtitle: '<b>Firma con IO</b> è la funzionalità integrata nell’app IO che consente di firmare digitalmente i documenti della Pubblica Amministrazione in modo facile, veloce e sicuro. Tutto, senza uscire dall’app.'
+    background: '../../assets/firma-con-io-hero-background.jpg'
+    size: big
+  - theme: light
+    type: Editorial
+    slug: 'home-editorial-firma'
+    width: wide
+    eyelet: ''
+    title: Una firma a valore legale, a disposizione di tutti
+    body: '<p><b>Firma con IO</b> è una <b>Firma Elettronica Qualificata</b> “one shot” con il massimo valore legale, pari alla firma autografa, che consente agli <b>enti</b> di digitalizzare l’iter di raccolta firme. Ai <b>cittadini basta avere IO</b> per firmare documenti e contratti direttamente sul proprio dispositivo.</p>'
+    ctaButtons:
+      - text: Come Funziona
+        href: '#come-funziona'
+        target: _self
+        variant: outlined
+    image:
+      src: ../../assets/man.jpg
+      alt: a landscape photo
+  - theme: light
+    type: Editorial
+    slug: 'home-editorial-enti'
+    reversed: true,
+    width: wide
+    eyelet: ''
+    title: Tutti i processi di firma, senza spostamenti
+    body:
+      '<p>Grazie a <b>Firma con IO</b> lo scambio di documenti tra enti e cittadini è immediato. Non serve apporre la firma in presenza o scannerizzare copie cartacee da inviare in pdf, perché tutto avviene su IO.</p>
+      <p>Un esempio? Qualsiasi realtà del <b>mondo accademico</b> può gestire da remoto contratti occasionali, tirocini, dottorati, assegni di ricerca o borse di studio che devono essere sottoscritti da studenti o collaboratori, solitamente non dotati di una firma digitale certificata.</p>
+      <p>Per avere maggiori dettagli su come il tuo ente può integrare il servizio di <b>Firma con IO</b>, consulta il <a href="https://docs.pagopa.it/manuale-operativo-di-firma-con-io/" target="_blank">manuale operativo</a>.</p>'
+    ctaButtons:
+      - text: Aderisci
+        variant: contained
+        href: '#aderisci'
+        target: _self
+    image:
+      src: ../../assets/woman.jpg
+      alt: a landscape photo
+  - theme: dark
+    width: wide
+    type: Feature
+    slug: 'home-feature-firma'
+    title: Perché scegliere Firma con IO?
+    items:
+      - title: Semplice
+        subtitle: L’invio, la ricezione e la gestione dei documenti firmati avvengono in maniera immediata con un notevole risparmio di tempo
+      - title: Sicura
+        subtitle: I cittadini firmano attraverso un canale già noto e affidabile, senza doversi iscrivere a portali di firma dedicati
+      - title: Conveniente
+        subtitle: Consente a enti e PA di risparmiare sui costi legati alla raccolta firme e gestione documentale
+      - title: Sostenibile
+        subtitle: L’intero processo è interamente digitale, evitando spostamenti e stampa di documenti cartacei
+  - theme: light
+    type: HowTo
+    slug: 'come-funziona'
+    title: Come funziona?
+    steps:
+      - title: L’ente invia la richiesta di firma
+        description: L’ente chiede all’utente di firmare un documento, inviando un messaggio sull’app IO. L’ente può inserire una richiesta di firma anche nel proprio sito web, attraverso un pulsante dedicato che permette di aprire i documenti su IO e completare l’operazione.
+      - title: I documenti sono visibili su IO
+        description: L’utente effettua l’accesso all’app IO per visualizzare i documenti da firmare, consultare le clausole presenti e le condizioni del fornitore del servizio.
+      - title: L’utente appone la firma
+        description: Dopo aver selezionato le firme da apporre e accettato termini e condizioni del servizio, l’utente completa l’operazione tramite riconoscimento biometrico o codice di sblocco.
+      - title: I documenti firmati sono disponibili
+        description: L’utente riceve tramite messaggio su IO i documenti firmati, che possono essere condivisi o scaricati sul proprio dispositivo.
+    rowMaxSteps: 4
+    stepsAlign: center
+  - src: media/720.2a608ca3.mp4
+    type: PhotoVideo
+    slug: 'home-photoVideo-firma'
+    full: true,
+    theme: 'dark'
+    autoplay: true,
+    loop: true,
+    useYoutubeLayout: true,
+  - title: Vuoi altre informazioni sull’adesione?
+    subtitle: Per altri dettagli su Firma con IO, inserisci i dati richiesti. Ti contatteremo al più presto per rispondere alle tue domande.
+    type: Form
+    slug: 'aderisci'
+    privacy: Inviando la richiesta i tuoi dati saranno trattati come descritto nell'<a href='/informativa-privacy'>informativa sul trattamento dei dati personali</a>
+  - type: BannerLink
+    decoration:
+      src: ./aderisci.svg
+      alt: aderisci
+    slug: 'bannerLink-firma'
+    theme: dark
+    body: Se hai già le informazioni necessarie, procedi con la richiesta di adesione per il tuo ente
+    title: Vuoi Aderire?
+    ctaButtons:
+      - text: VAI ALL'ADESIONE
+        href: https://selfcare.pagopa.it/onboarding/prod-io-sign
+        target: _blank
+        variant: contained
+  - theme: light
+    type: BannerLink
+    slug: 'home-bannerLink-faq'
+    title: Dubbi o domande?
+    ctaButtons:
+      - text: LEGGI LE FAQ
+        variant: contained
+        href: faq
+        target: _self
