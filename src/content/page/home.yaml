@@ -89,8 +89,8 @@ components:
     autoplay: true,
     loop: true,
     useYoutubeLayout: true,
-  - title: Vuoi altre informazioni sull’adesione?
-    subtitle: Per altri dettagli su Firma con IO, inserisci i dati richiesti. Ti contatteremo al più presto per rispondere alle tue domande.
+  - title: Sei un ente e vuoi altre informazioni sull’adesione?
+    subtitle: Per altri dettagli su Firma con IO, inserisci i dati richiesti. I nostri account ti contatteranno al più presto per rispondere alle tue domande.
     type: Form
     slug: 'aderisci'
     privacy: Inviando la richiesta i tuoi dati saranno trattati come descritto nell'<a href='/informativa-privacy'>informativa sul trattamento dei dati personali</a>
