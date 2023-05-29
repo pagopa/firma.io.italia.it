@@ -1,0 +1,98 @@
+name: deploy
+description: Build and deploy
+
+inputs:
+  env:
+    description: 'The environment'
+    required: true
+  site_url:
+    description: 'The URL of the site'
+    required: true
+  cms_url:
+    description: 'The URL of the CMS'
+    required: true
+  strapi_token:
+    description: 'The token to authenticate to the CMS'
+    required: true
+  storage_account:
+    description: 'The storage account on which site will be uploaded'
+    required: true
+  cdn_profile:
+    description: 'The CDN profile exposing the site'
+    required: true
+  cdn_endpoint:
+    description: 'The CDN endpoint exposing the site'
+    required: true
+  resource_group:
+    description: 'The resource group containing infrastructure resources'
+    required: true
+  azure_client_id:
+    description: 'The Client ID for Azure authentication'
+    required: true
+  azure_tenant_id:
+    description: 'The Tenant ID for Azure authentication'
+    required: true
+  azure_subscription_id:
+    description: 'The Subscription ID for Azure authentication'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Login
+      id: login
+      # from https://github.com/Azure/login/commits/master
+      uses: azure/login@v1
+      with:
+        client-id: ${{ inputs.azure_client_id }}
+        tenant-id: ${{ inputs.azure_tenant_id }}
+        subscription-id: ${{ inputs.azure_subscription_id }}
+
+    - name: Use Node.js
+      id: nodejs
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+    - name: Azure download assets
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72
+        inlineScript: |
+          # Get static assets
+          az storage blob download-batch \
+            --account-name ${{ inputs.storage_account }} \
+            --source static \
+            --destination static
+    - name: Build
+      id: build
+      shell: bash
+      env:
+        SITE_URL: ${{ inputs.site_url }}
+        STRAPI_TOKEN: ${{ inputs.strapi_token }}
+        STRAPI_API_URL: ${{ inputs.cms_url }}
+      run: |
+        yarn install
+        yarn build
+    - name: Azure upload
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72
+        inlineScript: |
+          # Empty storage
+          az storage blob delete-batch \
+            --account-name ${{ inputs.storage_account }} \
+            --source '$web'
+
+          # Upload to storage
+          az storage blob upload-batch \
+            --account-name ${{ inputs.storage_account }} \
+            --source public \
+            --destination '$web' \
+            --overwrite
+
+          # Purge CDN
+          az cdn endpoint purge \
+            --name ${{ inputs.cdn_endpoint }} \
+            --profile-name ${{ inputs.cdn_profile }} \
+            --resource-group ${{ inputs.resource_group }} \
+            --content-paths '/*'
