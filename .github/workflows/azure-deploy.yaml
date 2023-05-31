@@ -1,0 +1,88 @@
+name: "Azure Deploy"
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Which environment to update.'
+        type: choice
+        default: 'dev'
+        required: true
+        options:
+        - dev
+        - prod
+
+  # webhook trigger
+  repository_dispatch:
+    types:
+      - webhook-live-dev
+      - webhook-live-prod
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  deploy:
+    name: "deploy"
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        include:
+          - environment: 'poc'
+            CMS_URL: 'https://cms.poc.pagopa.it'
+            SITE_URL: 'https://io-d-sign-landing-cdn-endpoint.azureedge.net'
+            STORAGE_ACCOUNT: 'iodsignlandingsa'
+            CDN_ENDPOINT: 'io-d-sign-landing-cdn-profile'
+            CDN_PROFILE: 'io-d-sign-landing-cdn-profile'
+            RESOURCE_GROUP: 'io-d-sign-infra-rg'
+          - environment: 'prod'
+            CMS_URL: 'http://cms-alb-1558790704.eu-central-1.elb.amazonaws.com'
+            SITE_URL: 'https://firma.io.italia.it'
+            STORAGE_ACCOUNT: 'iopsignlandingsa'
+            CDN_ENDPOINT: 'io-p-sign-landing-cdn-endpoint'
+            CDN_PROFILE: 'io-p-sign-landing-cdn-profile'
+            RESOURCE_GROUP: 'io-p-sign-integration-rg'
+
+    environment: ${{ matrix.environment }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build and Deploy
+        if: ${{ inputs.environment == matrix.environment }}
+        uses: ./.github/workflows/deploy
+        with:
+          env: ${{ inputs.environment }}
+          site_url: ${{ matrix.SITE_URL }}
+          cms_url: ${{ matrix.CMS_URL }}
+          strapi_token: ${{ secrets.STRAPI_TOKEN }}
+          storage_account: ${{ matrix.STORAGE_ACCOUNT }}
+          cdn_endpoint: ${{ matrix.CDN_ENDPOINT }}
+          cdn_profile: ${{ matrix.CDN_PROFILE }}
+          resource_group: ${{ matrix.RESOURCE_GROUP }}
+          azure_client_id: ${{ secrets.AZURE_CLIENT_ID }}
+          azure_tenant_id: ${{ secrets.AZURE_TENANT_ID }}
+          azure_subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Webhook Build and Deploy
+        if:  ${{ github.event.action == format('webhook-live-{0}', matrix.environment) }}
+        uses: ./.github/workflows/deploy
+        with:
+          env: ${{ inputs.environment }}
+          site_url: ${{ matrix.SITE_URL }}
+          cms_url: ${{ matrix.CMS_URL }}
+          strapi_token: ${{ secrets.STRAPI_TOKEN }}
+          storage_account: ${{ matrix.STORAGE_ACCOUNT }}
+          cdn_endpoint: ${{ matrix.CDN_ENDPOINT }}
+          cdn_profile: ${{ matrix.CDN_PROFILE }}
+          resource_group: ${{ matrix.RESOURCE_GROUP }}
+          azure_client_id: ${{ secrets.AZURE_CLIENT_ID }}
+          azure_tenant_id: ${{ secrets.AZURE_TENANT_ID }}
+          azure_subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
