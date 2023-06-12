@@ -68,6 +68,9 @@ footer:
     resources:
       title: 'Risorse'
       links:
+        - label: 'Termini e Condizioni'
+          href: '/termini-condizioni'
+          ariaLabel: 'Vai al link: Termini e Condizioni'
         - label: 'Informativa Privacy'
           href: '/informativa-privacy'
           ariaLabel: 'Vai al link: Informativa Privacy'
