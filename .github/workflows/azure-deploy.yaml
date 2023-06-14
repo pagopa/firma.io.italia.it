@@ -9,8 +9,8 @@ on:
         default: 'dev'
         required: true
         options:
-        - dev
-        - prod
+        - live-dev
+        - live-prod
 
   # webhook trigger
   repository_dispatch:
@@ -34,14 +34,14 @@ jobs:
       max-parallel: 1
       matrix:
         include:
-          - environment: 'poc'
-            CMS_URL: 'https://cms.poc.pagopa.it'
+          - environment: 'live-dev'
+            CMS_URL: 'https://cms.dev.pagopa.it'
             SITE_URL: 'https://io-d-sign-landing-cdn-endpoint.azureedge.net'
             STORAGE_ACCOUNT: 'iodsignlandingsa'
             CDN_ENDPOINT: 'io-d-sign-landing-cdn-profile'
             CDN_PROFILE: 'io-d-sign-landing-cdn-profile'
             RESOURCE_GROUP: 'io-d-sign-infra-rg'
-          - environment: 'prod'
+          - environment: 'live-prod'
             CMS_URL: 'http://cms-alb-1558790704.eu-central-1.elb.amazonaws.com'
             SITE_URL: 'https://firma.io.italia.it'
             STORAGE_ACCOUNT: 'iopsignlandingsa'
