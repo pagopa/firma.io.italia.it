@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box, Container } from '@mui/material';
 
-interface TerminiProps {
+interface TermsProps {
   content?: string
 }
 
-const Termini = (_props: TerminiProps) => {
+const Terms = (_props: TermsProps) => {
   return (
     <Box sx={{ py: { xs: 4, md: 10 } }} component="section">
       <Container>
@@ -20,4 +20,4 @@ const Termini = (_props: TerminiProps) => {
     </Box >)
 };
 
-export default Termini;
+export default Terms;

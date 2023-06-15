@@ -8,7 +8,7 @@ import { Hero } from './Hero';
 import { HowTo } from './HowTo';
 import Accordion from './Accordion';
 import Privacy from './Privacy';
-import Termini from './Termini';
+import Terms from './Terms';
 
 // This object is used to map component names to React components
 const componentsMap: {
@@ -23,7 +23,7 @@ const componentsMap: {
 	HowTo,
 	PhotoVideo,
 	Privacy,
-	Termini
+	Terms
 };
 
 const Block = ({

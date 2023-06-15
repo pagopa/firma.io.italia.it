@@ -1,0 +1,21 @@
+route: ''
+url: /termini-condizioni
+seo:
+  metaImage:
+    localFile:
+      publicURL: '/social-card.png'
+  metaTitle: 'Termini e Condizioni - Firma con IO - Firma documenti e contratti della PA'
+  metaDescription: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
+  metaSocial:
+    - description: 'Il servizio che consente di firmare digitalmente i documenti della PA. Facile, Veloce, Sicuro, senza uscire dall’app.'
+      title: 'Firma con IO - Firma documenti e contratti della PA'
+      socialNetwork: 'twitter'
+components:
+  - type: Hero
+    theme: dark
+    slug: 'terms-conditions'
+    title: Termini e Condizioni
+    background: ../../assets/hero-solid-dark.jpg
+    size: small
+  - type: Terms
+    content: test
