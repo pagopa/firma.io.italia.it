@@ -68,9 +68,6 @@ footer:
     resources:
       title: 'Risorse'
       links:
-        - label: 'Termini e Condizioni'
-          href: '/termini-condizioni'
-          ariaLabel: 'Vai al link: Termini e Condizioni'
         - label: 'Informativa Privacy'
           href: '/informativa-privacy'
           ariaLabel: 'Vai al link: Informativa Privacy'
@@ -106,6 +103,9 @@ footer:
           href: 'https://pagopa.portaleamministrazionetrasparente.it/pagina746_altri-contenuti.html'
           ariaLabel: 'Vai al link: Modello 231'
           linkType: 'external'
+        - label: 'Termini e Condizioni Firma con IO'
+          href: '/termini-condizioni'
+          ariaLabel: 'Vai al link: Termini e Condizioni Firma con IO'
     followUs:
       title: 'Seguici su'
       socialLinks:
