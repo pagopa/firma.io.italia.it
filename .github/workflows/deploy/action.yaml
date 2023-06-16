@@ -39,6 +39,11 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - name: Use Node.js
+      id: nodejs
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
     - name: Login
       id: login
       # from https://github.com/Azure/login/commits/master
@@ -47,16 +52,9 @@ runs:
         client-id: ${{ inputs.azure_client_id }}
         tenant-id: ${{ inputs.azure_tenant_id }}
         subscription-id: ${{ inputs.azure_subscription_id }}
-
-    - name: Use Node.js
-      id: nodejs
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18.x'
     - name: Azure download assets
       uses: azure/CLI@v1
       with:
-        azcliversion: 2.0.72
         inlineScript: |
           # Get static assets
           az storage blob download-batch \
@@ -77,7 +75,6 @@ runs:
     - name: Azure upload
       uses: azure/CLI@v1
       with:
-        azcliversion: 2.0.72
         inlineScript: |
           # Empty storage
           az storage blob delete-batch \
