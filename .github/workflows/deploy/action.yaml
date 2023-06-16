@@ -61,6 +61,7 @@ runs:
           # Get static assets
           az storage blob download-batch \
             --account-name ${{ inputs.storage_account }} \
+            --subscription ${{ inputs.azure_subscription_id }} \
             --source static \
             --destination static
     - name: Build
@@ -81,11 +82,13 @@ runs:
           # Empty storage
           az storage blob delete-batch \
             --account-name ${{ inputs.storage_account }} \
+            --subscription ${{ inputs.azure_subscription_id }} \
             --source '$web'
 
           # Upload to storage
           az storage blob upload-batch \
             --account-name ${{ inputs.storage_account }} \
+            --subscription ${{ inputs.azure_subscription_id }} \
             --source public \
             --destination '$web' \
             --overwrite
