@@ -10,7 +10,7 @@ const Terms = (_props: TermsProps) => {
     <Box sx={{ py: { xs: 4, md: 10 } }} component="section">
       <Container>
         <h4>I termini e le condizioni</h4>
-        <p><strong>PagoPA</strong></p>
+        <h5>PagoPA</h5>
         <ul>
           <li><a href="https://io.italia.it/app-content/tos_privacy.html" target="_blank" rel="noopener">Informativa privacy</a></li>
         </ul>
