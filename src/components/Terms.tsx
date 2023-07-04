@@ -16,7 +16,7 @@ const Terms = (_props: TermsProps) => {
         </ul>
         <p><strong>Namirial</strong></p>
         <ul>
-          <li><a href="https://docs.namirialtsp.com/documents/Mod_NAM_CA01D_ITA_50.pdf" target="_blank" rel="noopener">Mod_NAM_CA01D_ITA_50.pdf</a></li>
+          <li><a href="https://docs.namirialtsp.com/documents/Mod_NAM_CA01D_ITA_50.pdf" target="_blank" rel="noopener">Condizioni generali di contratto</a></li>
           <li><a href="https://docs.namirialtsp.com/documents/Mod_NAM_GDPR03D_ITA_50.pdf" target="_blank" rel="noopener">Mod_NAM_GDPR03D_ITA_50.pdf</a></li>
         </ul>
         <p><em>Data di ultima modifica: 3 luglio 2023</em></p>
