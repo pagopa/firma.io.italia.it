@@ -12,7 +12,7 @@ const Terms = (_props: TermsProps) => {
         <h4>I termini e le condizioni</h4>
         <p><strong>PagoPA</strong></p>
         <ul>
-          <li><a href="https://io.italia.it/app-content/tos_privacy.html" target="_blank" rel="noopener">TOS_PRIVACY</a></li>
+          <li><a href="https://io.italia.it/app-content/tos_privacy.html" target="_blank" rel="noopener">Informativa privacy</a></li>
         </ul>
         <p><strong>Namirial</strong></p>
         <ul>
