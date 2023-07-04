@@ -14,12 +14,12 @@ const Terms = (_props: TermsProps) => {
         <ul>
           <li><a href="https://io.italia.it/app-content/tos_privacy.html" target="_blank" rel="noopener">Informativa privacy</a></li>
         </ul>
-        <p><strong>Namirial</strong></p>
+        <h5>Namirial</h5>
         <ul>
           <li><a href="https://docs.namirialtsp.com/documents/Mod_NAM_CA01D_ITA_50.pdf" target="_blank" rel="noopener">Condizioni generali di contratto</a></li>
           <li><a href="https://docs.namirialtsp.com/documents/Mod_NAM_GDPR03D_ITA_50.pdf" target="_blank" rel="noopener">Informativa trattamento dati</a></li>
         </ul>
-        <p><em>Data di ultima modifica: 3 luglio 2023</em></p>
+        <p><em>Data di ultima modifica: 4 luglio 2023</em></p>
       </Container>
     </Box >)
 };
