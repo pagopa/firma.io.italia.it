@@ -122,7 +122,7 @@ footer:
           href: 'https://www.instagram.com/pagopaspa'
           ariaLabel: 'Link: vai al sito Instagram di PagoPA S.p.A.'
       links:
-        - label: 'Accessibilità'
-          href: 'https://form.agid.gov.it/view/eca3487c-f3cb-40be-a590-212eafc70058/'
-          ariaLabel: 'Vai al link: Accessibilità'
+        - label: 'Dichiarazione di Accessibilità'
+          href: 'https://form.agid.gov.it/view/60c9545c-b757-4dbd-8727-7ba986a630ef/'
+          ariaLabel: 'Vai al link: Dichiarazione di Accessibilità'
           linkType: 'internal'
