@@ -41,19 +41,19 @@ runs:
   steps:
     - name: Use Node.js
       id: nodejs
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3
       with:
         node-version: '18.x'
     - name: Login
       id: login
       # from https://github.com/Azure/login/commits/master
-      uses: azure/login@v1
+      uses: azure/login@cb79c773a3cfa27f31f25eb3f677781210c9ce3d # v1
       with:
         client-id: ${{ inputs.azure_client_id }}
         tenant-id: ${{ inputs.azure_tenant_id }}
         subscription-id: ${{ inputs.azure_subscription_id }}
     - name: Azure download assets
-      uses: azure/CLI@v1
+      uses: azure/CLI@4db43908b9df2e7ac93c8275a8f9a448c59338dd # v1
       with:
         inlineScript: |
           # Get static assets
@@ -73,7 +73,7 @@ runs:
         yarn install
         yarn build
     - name: Azure upload
-      uses: azure/CLI@v1
+      uses: azure/CLI@4db43908b9df2e7ac93c8275a8f9a448c59338dd # v1
       with:
         inlineScript: |
           # Empty storage
